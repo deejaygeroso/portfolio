@@ -19,12 +19,12 @@ export default function ViewMyWorkButton(): JSX.Element {
       onClick={temporarilyAddSmoothScroll}
       sx={{
         textTransform: 'none',
-        px: { xs: 2, sm: 3 }, // smaller padding on mobile
+        px: { xs: 2, sm: 3 },
         py: { xs: 1, sm: 1.2 },
         backgroundColor: '#181b1e',
         border: '2px solid #d2f5ff',
         color: '#d2f5ff',
-        fontSize: { xs: '16px', sm: '18px', md: '22px' }, // responsive font size
+        fontSize: { xs: '16px', sm: '18px', md: '22px' },
         fontWeight: 300,
         textDecoration: 'none',
         borderRadius: 3,
