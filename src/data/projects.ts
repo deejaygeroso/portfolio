@@ -108,7 +108,7 @@ const memberJunski = {
   position: '',
 };
 const setMemberPosition = (member: IMember, position: string): IMember => {
-  return Object.assign({}, member, { position });
+  return { ...member, position };
 };
 
 const projects: IProject[] = [
@@ -141,7 +141,7 @@ const projects: IProject[] = [
           jpg: markLalor,
           webP: markLalorWebP,
         },
-        position: 'CEO of ProcQ pty ltd, Head of the team & served temporarily as the Backend Developer of our project',
+        position: 'System Architect, Head of Team & CEO of ProcQ',
       },
       {
         linkedIn: 'https://au.linkedin.com/in/sarajavan',
