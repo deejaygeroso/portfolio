@@ -87,7 +87,7 @@ export default function ProjectRoleModal({
               fontWeight='bold'>
               Technologies
             </Typography>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2, pl: 3, mt: 1 }}>
               {project.technology.map(
                 (technology, idx): JSX.Element => (
                   <Chip
