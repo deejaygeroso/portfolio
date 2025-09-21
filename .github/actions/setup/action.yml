@@ -1,0 +1,34 @@
+name: 'Setup'
+description: 'Setup and Install Dependencies'
+
+inputs:
+  NODE_VERSION:
+    description: 'Node.js version'
+    required: true
+  PNPM_VERSION:
+    description: 'PNPM version'
+    required: true
+  CACHE:
+    description: 'Cache dependencies'
+    default: 'pnpm'
+
+runs:
+  using: 'composite'
+  steps:
+    # Checkout the repository
+    - name: Checkout Repository
+      uses: pnpm/action-setup@v4
+      with:
+        version: ${{ inputs.PNPM_VERSION }}
+
+    # Setup Node and Cache Dependencies
+    - name: Setup Node and Cache Dependencies
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.NODE_VERSION }}
+        cache: ${{ inputs.CACHE }}
+
+    # Install Dependencies
+    - name: Install Dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash

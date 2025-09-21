@@ -1,0 +1,51 @@
+name: Production Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  actions: read
+  contents: write
+  id-token: write
+  packages: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Setup and Install Dependencies
+      - name: Setup and Install Dependencies
+        uses: ./.github/actions/setup
+        with:
+          node_version: '20'
+          pnpm_version: '9'
+
+      # Set Version Tag
+      - name: Set Version Tag
+        id: lib-version
+        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      # Set Flag if Tag Exist
+      - name: Set Flag if Tag Exist
+        id: tag
+        run: |
+          echo "TAG_EXISTS=$(git ls-remote --tags origin refs/tags/v${{ steps.lib-version.outputs.VERSION }})" >> $GITHUB_OUTPUT
+
+      # Only push and release tag if it does not yet exist.
+      - name: Release Tag
+        if: steps.tag.outputs.TAG_EXISTS == ''
+        uses: softprops/action-gh-release@v1
+        with:
+          body: |
+            ## CHANGELOG
+            Release Version v${{ steps.lib-version.outputs.VERSION }}
+          tag_name: v${{ steps.lib-version.outputs.VERSION }}
+          draft: false
+          prerelease: false

@@ -1,0 +1,63 @@
+name: Feature Pipeline
+
+on:
+  push:
+    branches:
+      - feature/**
+      - fix/**
+
+permissions:
+  actions: read
+  contents: read
+  id-token: write
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Setup and Install Dependencies
+      - name: Setup and Install Dependencies
+        uses: ./.github/actions/setup
+        with:
+          node_version: '20'
+          pnpm_version: '9'
+
+      # Generate Prisma Client (Required for building and testing the App)
+      # - name: Generate Prisma Client
+      #   run: pnpm prisma:generate
+
+      # Lint
+      - name: Lint
+        run: pnpm lint
+
+  trivy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Setup and Install Dependencies
+      - name: Setup and Install Dependencies
+        uses: ./.github/actions/setup
+        with:
+          node_version: '20'
+          pnpm_version: '9'
+
+      # Vulnerability & Secret scan
+      - name: Vulnerability & Secret scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: false
+          severity: 'CRITICAL,HIGH,MEDIUM'
+          scanners: 'secret,vuln'
+          vuln-type: 'library'
