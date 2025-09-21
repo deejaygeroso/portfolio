@@ -1,3 +1,11 @@
+import { IconButtonProps } from '@mui/material';
+
+import { IProject } from '@/interfaces';
+
 export interface ProjectProps {
-  children: React.ReactNode;
+  project: IProject;
+}
+
+export interface ExpandMoreProps extends IconButtonProps {
+  expand: boolean;
 }

@@ -9,7 +9,10 @@ export default function Projects(): JSX.Element {
   return (
     <Box>
       {projects.map(project => (
-        <Project key={project.name}>{project.name}</Project>
+        <Project
+          key={project.name}
+          project={project}
+        />
       ))}
     </Box>
   );
