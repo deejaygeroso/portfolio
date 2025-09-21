@@ -3,9 +3,8 @@ import { JSX, useState } from 'react';
 import Image from 'next/image';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import ShareIcon from '@mui/icons-material/Share';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import {
   Avatar,
   Button,
@@ -24,13 +23,14 @@ import { styled } from '@mui/material/styles';
 import { ExpandMoreProps, ProjectProps } from './types';
 
 const ProjectImage = styled(Image)(({ theme }) => ({
-  objectFit: 'cover',
+  objectFit: 'contain',
   // boxShadow: theme.shadows[3],
   borderBottom: '1px solid #ccc',
   borderTop: '1px solid #ccc',
-  marginBottom: theme.spacing(4),
-  width: '100%',
-  height: '100%',
+  maxWidth: '100%',
+  maxHeight: '100%',
+  height: 'auto',
+  width: 'auto',
   // [theme.breakpoints.up('sm')]: {
   //   width: '200px',
   //   height: '200px',
@@ -68,8 +68,16 @@ const ExpandMore = styled((props: Readonly<ExpandMoreProps>): JSX.Element => {
 export default function Project({ project }: Readonly<ProjectProps>): JSX.Element {
   const [expanded, setExpanded] = useState(false);
 
-  const handleExpandClick = () => {
+  const handleExpandClick = (): void => {
     setExpanded(!expanded);
+  };
+
+  const goToLink = (url: string): void => {
+    if (!url) {
+      alert('Sorry, Project no longer exists.');
+      return;
+    }
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
   return (
     <Container
@@ -81,9 +89,9 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
         textAlign: 'center',
         py: { xs: 6, sm: 8, md: 10 },
       }}>
-      <Card>
+      <Card sx={{ maxWidth: 845 }}>
         <CardHeader
-          avatar={<Avatar aria-label='recipe'>R</Avatar>}
+          avatar={<Avatar aria-label='recipe'>{project.name.charAt(0)}</Avatar>}
           action={
             <IconButton aria-label='settings'>
               <MoreVertIcon />
@@ -92,29 +100,37 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
           title={project.name}
           subheader={project.date}
         />
-        <CardMedia>
+        <CardMedia
+          sx={{
+            maxHeight: 720,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative', // required for next/image fill
+            overflow: 'hidden',
+          }}>
           <ProjectImage
             src={project.photos[0].webP}
             alt={project.name}
           />
         </CardMedia>
-        <CardContent>
+        <CardContent sx={{ textAlign: 'left' }}>
           <Typography
             variant='body2'
             sx={{ color: 'text.secondary' }}>
-            This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup
-            of frozen peas along with the mussels, if you like.
+            {project.description}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <Button size='small'>Share</Button>
-          <Button size='small'>Learn More</Button>
-          <IconButton aria-label='add to favorites'>
-            <FavoriteIcon />
+          <IconButton
+            onClick={(): void => goToLink(project.domains[0]?.url)}
+            color='primary'
+            aria-label='open project link'
+            size='small'>
+            <OpenInNewIcon />
           </IconButton>
-          <IconButton aria-label='share'>
-            <ShareIcon />
-          </IconButton>
+          <Button size='small'>Role</Button>
+          <Button size='small'>Teammates</Button>
           <ExpandMore
             expand={expanded}
             onClick={handleExpandClick}
