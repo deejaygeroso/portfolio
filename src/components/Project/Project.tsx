@@ -2,6 +2,7 @@ import { JSX, useState } from 'react';
 
 import Image from 'next/image';
 
+import EngineeringIcon from '@mui/icons-material/Engineering';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -87,7 +88,7 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
         justifyContent: 'center',
         flexDirection: 'column',
         textAlign: 'center',
-        py: { xs: 6, sm: 8, md: 10 },
+        py: { xs: 1, sm: 2, md: 6 },
       }}>
       <Card sx={{ maxWidth: 845 }}>
         <CardHeader
@@ -99,6 +100,15 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
           }
           title={project.name}
           subheader={project.date}
+          slotProps={{
+            title: {
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+            },
+            subheader: {
+              fontSize: '0.675rem',
+            },
+          }}
         />
         <CardMedia
           sx={{
@@ -115,6 +125,18 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
           />
         </CardMedia>
         <CardContent sx={{ textAlign: 'left' }}>
+          <Typography
+            variant='body2'
+            sx={{
+              color: 'text.secondary',
+              verticalAlign: 'middle',
+              display: 'flex',
+              alignItems: 'center',
+              mb: 1,
+              gap: 1,
+            }}>
+            <EngineeringIcon /> {project.position}
+          </Typography>
           <Typography
             variant='body2'
             sx={{ color: 'text.secondary' }}>
