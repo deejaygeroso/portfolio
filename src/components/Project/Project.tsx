@@ -21,6 +21,8 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import TeamMembersModal from '@/components/TeamMembersModal';
+
 import { ExpandMoreProps, ProjectProps } from './types';
 
 const ProjectImage = styled(Image)(({ theme }) => ({
@@ -68,6 +70,7 @@ const ExpandMore = styled((props: Readonly<ExpandMoreProps>): JSX.Element => {
 
 export default function Project({ project }: Readonly<ProjectProps>): JSX.Element {
   const [expanded, setExpanded] = useState(false);
+  const [teamMembersModalOpen, setTeamMembersModalOpen] = useState(false);
 
   const handleExpandClick = (): void => {
     setExpanded(!expanded);
@@ -152,7 +155,11 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
             <OpenInNewIcon />
           </IconButton>
           <Button size='small'>Role</Button>
-          <Button size='small'>Teammates</Button>
+          <Button
+            size='small'
+            onClick={(): void => setTeamMembersModalOpen(true)}>
+            Teammates
+          </Button>
           <ExpandMore
             expand={expanded}
             onClick={handleExpandClick}
@@ -187,6 +194,11 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
           </CardContent>
         </Collapse>
       </Card>
+      <TeamMembersModal
+        open={teamMembersModalOpen}
+        onClose={(): void => setTeamMembersModalOpen(false)}
+        teamMembers={project.members}
+      />
     </Container>
   );
 }
