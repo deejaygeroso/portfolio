@@ -16,6 +16,7 @@ import {
   useTheme,
 } from '@mui/material';
 
+import SectionTitle from '@/components/SectionTitle';
 import { testimonials } from '@/data';
 
 export default function TestimonialList(): JSX.Element {
@@ -23,7 +24,13 @@ export default function TestimonialList(): JSX.Element {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box sx={{ mt: 4, py: 4, background: '#fff' }}>
+    <Box
+      component='section'
+      sx={{ mt: 4, py: 4, background: '#fff' }}>
+      <SectionTitle
+        title='Testimonials'
+        subtitle='What people I worked with say about me'
+      />
       <Container
         maxWidth='md'
         sx={{ py: 4 }}>

@@ -38,6 +38,7 @@ export default function WelcomeScreen(): JSX.Element {
 
   return (
     <Box
+      component='section'
       sx={{
         minHeight: '100vh',
         backgroundImage: 'url(/main-wallpaper.webp)',
