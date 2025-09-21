@@ -16,6 +16,8 @@ interface IProject {
   }[];
   position: string;
   technology: string[];
+  mainResponsibility?: string;
+  responsibilities: string[];
 }
 
 export default IProject;

@@ -6,14 +6,7 @@ import { Box, Chip, Dialog, DialogContent, DialogTitle, IconButton, Typography }
 
 import { ProjectRoleModalProps } from './types';
 
-export default function ProjectRoleModal({
-  open,
-  onClose,
-  project,
-  responsibilities,
-  skills = [],
-  impact,
-}: Readonly<ProjectRoleModalProps>): JSX.Element {
+export default function ProjectRoleModal({ open, onClose, project }: Readonly<ProjectRoleModalProps>): JSX.Element {
   return (
     <Dialog
       open={open}
@@ -44,7 +37,7 @@ export default function ProjectRoleModal({
           sx={{
             position: 'absolute',
             right: 8,
-            top: 8,
+            top: 22,
           }}>
           <CloseIcon />
         </IconButton>
@@ -65,10 +58,15 @@ export default function ProjectRoleModal({
           fontWeight='bold'>
           Responsibilities
         </Typography>
+        {project.mainResponsibility && (
+          <Typography variant='body2'>
+            <strong>Main Role:</strong> {project.mainResponsibility}
+          </Typography>
+        )}
         <Box
           component='ul'
           sx={{ pl: 3, mb: 2 }}>
-          {responsibilities.map(
+          {project.responsibilities.map(
             (item, index): JSX.Element => (
               <Typography
                 key={item + index}
@@ -110,38 +108,6 @@ export default function ProjectRoleModal({
             <Box sx={{ pl: 3, mb: 2, mt: 1 }}>
               <Typography variant='body2'>Cannot disclose publicly!</Typography>
             </Box>
-          </>
-        )}
-
-        {skills.length > 0 && (
-          <>
-            <Typography
-              variant='subtitle1'
-              fontWeight='bold'>
-              Skills & Tools
-            </Typography>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
-              {skills.map(
-                (skill, idx): JSX.Element => (
-                  <Chip
-                    key={skill + idx}
-                    label={skill}
-                    variant='outlined'
-                  />
-                ),
-              )}
-            </Box>
-          </>
-        )}
-
-        {impact && (
-          <>
-            <Typography
-              variant='subtitle1'
-              fontWeight='bold'>
-              Impact
-            </Typography>
-            <Typography variant='body2'>{impact}</Typography>
           </>
         )}
       </DialogContent>
