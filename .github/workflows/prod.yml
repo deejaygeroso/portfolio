@@ -38,14 +38,16 @@ jobs:
         run: |
           echo "TAG_EXISTS=$(git ls-remote --tags origin refs/tags/v${{ steps.lib-version.outputs.VERSION }})" >> $GITHUB_OUTPUT
 
+      - name: Extract latest changelog
+        run: |
+          awk '/^## [-1-9]+\.[0-9]+\.[0-9]+/ { if (found) exit; found=1 } found { print }' CHANGELOG.md > RELEASE_NOTES.md
+
       # Only push and release tag if it does not yet exist.
       - name: Release Tag
         if: steps.tag.outputs.TAG_EXISTS == ''
         uses: softprops/action-gh-release@v1
         with:
-          body: |
-            ## CHANGELOG
-            Release Version v${{ steps.lib-version.outputs.VERSION }}
+          body_path: RELEASE_NOTES.md
           tag_name: v${{ steps.lib-version.outputs.VERSION }}
           draft: false
           prerelease: false
