@@ -2,13 +2,20 @@ import { JSX } from 'react';
 
 import { Button } from '@mui/material';
 
+import { SectionPageIds } from '@/enums';
+
 export default function ViewMyWorkButton(): JSX.Element {
-  const temporarilyAddSmoothScroll = (): void => {
+  const goToProjects = (): void => {
     const htmlEl = document.documentElement;
     htmlEl.classList.add('smooth-scroll');
     setTimeout(() => {
       htmlEl.classList.remove('smooth-scroll');
     }, 600);
+
+    const el = document.getElementById(SectionPageIds.PROJECTS);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -16,7 +23,7 @@ export default function ViewMyWorkButton(): JSX.Element {
       variant='contained'
       color='primary'
       href='#projects'
-      onClick={temporarilyAddSmoothScroll}
+      onClick={goToProjects}
       sx={{
         textTransform: 'none',
         px: { xs: 2, sm: 3 },

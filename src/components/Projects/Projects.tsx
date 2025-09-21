@@ -5,10 +5,13 @@ import { Box } from '@mui/material';
 import Project from '@/components/Project';
 import SectionTitle from '@/components/SectionTitle';
 import { projects } from '@/data';
+import { SectionPageIds } from '@/enums';
 
 export default function Projects(): JSX.Element {
   return (
-    <Box component='section'>
+    <Box
+      component='section'
+      id={SectionPageIds.PROJECTS}>
       <SectionTitle
         title='Projects'
         subtitle='A selection of projects I was involved with during my career'

@@ -18,6 +18,7 @@ import {
 
 import SectionTitle from '@/components/SectionTitle';
 import { testimonials } from '@/data';
+import { SectionPageIds } from '@/enums';
 
 export default function TestimonialList(): JSX.Element {
   const theme = useTheme();
@@ -26,6 +27,7 @@ export default function TestimonialList(): JSX.Element {
   return (
     <Box
       component='section'
+      id={SectionPageIds.TESTIMONIALS}
       sx={{ mt: 4, py: 4, background: '#fff' }}>
       <SectionTitle
         title='Testimonials'
