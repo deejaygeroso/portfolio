@@ -68,7 +68,7 @@ export default function TestimonialList(): JSX.Element {
                     display: 'flex',
                     alignItems: 'center',
                     gap: 1,
-                    mb: 1,
+                    mb: { xs: 2, sm: 2, md: 0, lg: 0 },
                   }}>
                   {/* Small inline avatar on mobile */}
                   {isMobile && (
