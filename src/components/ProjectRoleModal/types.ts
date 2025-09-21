@@ -5,7 +5,6 @@ export interface ProjectRoleModalProps {
   onClose: () => void;
   project: IProject;
   responsibilities: string[];
-  mission?: string;
   skills?: string[];
   impact?: string;
 }

@@ -11,7 +11,6 @@ export default function ProjectRoleModal({
   onClose,
   project,
   responsibilities,
-  mission,
   skills = [],
   impact,
 }: Readonly<ProjectRoleModalProps>): JSX.Element {
@@ -69,28 +68,48 @@ export default function ProjectRoleModal({
         <Box
           component='ul'
           sx={{ pl: 3, mb: 2 }}>
-          {responsibilities.map((item, index) => (
-            <Typography
-              key={index}
-              component='li'
-              variant='body2'>
-              {item}
-            </Typography>
-          ))}
+          {responsibilities.map(
+            (item, index): JSX.Element => (
+              <Typography
+                key={item + index}
+                component='li'
+                variant='body2'>
+                {item}
+              </Typography>
+            ),
+          )}
         </Box>
 
-        {mission && (
+        {project.technology.length !== 0 ? (
           <>
             <Typography
               variant='subtitle1'
               fontWeight='bold'>
-              Mission / Philosophy
+              Technologies
             </Typography>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
+              {project.technology.map(
+                (technology, idx): JSX.Element => (
+                  <Chip
+                    key={technology + idx}
+                    label={technology}
+                    variant='filled'
+                    size='small'
+                  />
+                ),
+              )}
+            </Box>
+          </>
+        ) : (
+          <>
             <Typography
-              variant='body2'
-              paragraph>
-              {mission}
+              variant='subtitle1'
+              fontWeight='bold'>
+              Technologies
             </Typography>
+            <Box sx={{ pl: 3, mb: 2, mt: 1 }}>
+              <Typography variant='body2'>Cannot disclose publicly!</Typography>
+            </Box>
           </>
         )}
 
@@ -102,13 +121,15 @@ export default function ProjectRoleModal({
               Skills & Tools
             </Typography>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
-              {skills.map((skill, idx) => (
-                <Chip
-                  key={idx}
-                  label={skill}
-                  variant='outlined'
-                />
-              ))}
+              {skills.map(
+                (skill, idx): JSX.Element => (
+                  <Chip
+                    key={skill + idx}
+                    label={skill}
+                    variant='outlined'
+                  />
+                ),
+              )}
             </Box>
           </>
         )}
