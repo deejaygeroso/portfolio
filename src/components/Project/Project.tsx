@@ -23,6 +23,7 @@ import { styled } from '@mui/material/styles';
 
 import TeamMembersModal from '@/components/TeamMembersModal';
 
+import ProjectRoleModal from '../ProjectRoleModal';
 import { ExpandMoreProps, ProjectProps } from './types';
 
 const ProjectImage = styled(Image)(({ theme }) => ({
@@ -71,6 +72,7 @@ const ExpandMore = styled((props: Readonly<ExpandMoreProps>): JSX.Element => {
 export default function Project({ project }: Readonly<ProjectProps>): JSX.Element {
   const [expanded, setExpanded] = useState(false);
   const [teamMembersModalOpen, setTeamMembersModalOpen] = useState(false);
+  const [projectRoleModalOpen, setProjectRoleModalOpen] = useState(false);
 
   const handleExpandClick = (): void => {
     setExpanded(!expanded);
@@ -154,7 +156,11 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
             size='small'>
             <OpenInNewIcon />
           </IconButton>
-          <Button size='small'>Role</Button>
+          <Button
+            size='small'
+            onClick={(): void => setProjectRoleModalOpen(true)}>
+            Role
+          </Button>
           <Button
             size='small'
             onClick={(): void => setTeamMembersModalOpen(true)}>
@@ -198,6 +204,12 @@ export default function Project({ project }: Readonly<ProjectProps>): JSX.Elemen
         open={teamMembersModalOpen}
         onClose={(): void => setTeamMembersModalOpen(false)}
         teamMembers={project.members}
+      />
+      <ProjectRoleModal
+        open={projectRoleModalOpen}
+        onClose={(): void => setProjectRoleModalOpen(false)}
+        project={project}
+        responsibilities={['abc']}
       />
     </Container>
   );
