@@ -4,7 +4,7 @@ import { JSX } from 'react';
 
 import Link from 'next/link';
 
-import { Email, Facebook, GitHub, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
+import { Email, Facebook, GitHub, Instagram, LinkedIn, X as Twitter } from '@mui/icons-material';
 import { Box, IconButton, Typography } from '@mui/material';
 
 import { contacts } from '@/data';
