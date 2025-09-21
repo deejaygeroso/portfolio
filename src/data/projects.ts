@@ -300,9 +300,11 @@ const projects: IProject[] = [
       },
     ],
     position: 'Full-stack Typescript Developer',
+    mainResponsibility: 'Develop front-end features and backend APIs of the application.',
     responsibilities: [
       'Develop core front-end features',
-      'Write unit tests for front-end components',
+      'Write backend APIs',
+      'Write unit tests',
       'Integrate front-end with backend APIs',
       'Ensure responsive and accessible design',
     ],
@@ -341,6 +343,7 @@ const projects: IProject[] = [
       },
     ],
     position: 'Full-stack Javascript Developer',
+    mainResponsibility: 'Develop a web application that manages user portfolios for cryptocurrency assets.',
     responsibilities: [
       'Plan and design the architecture of the whole application',
       'Set up the project repository',
@@ -481,6 +484,7 @@ const projects: IProject[] = [
       },
     ],
     position: 'Mobile Developer (ios & android)',
+    mainResponsibility: 'Design and develop the mobile application for the Meegle system.',
     responsibilities: [
       'Set up the project repository',
       'Setup repo coding standards and guidelines',
@@ -536,6 +540,7 @@ const projects: IProject[] = [
       },
     ],
     position: 'Mobile Developer (ios & android)',
+    mainResponsibility: 'Design and develop the mobile application for the Meegle Monitoring system.',
     responsibilities: [
       'Set up the project repository',
       'Setup repo coding standards and guidelines',
@@ -566,6 +571,7 @@ const projects: IProject[] = [
       },
     ],
     position: 'Mobile Developer (ios & android)',
+    mainResponsibility: 'Design, plan and develop the mobile application for the Helpbert ticketing system.',
     responsibilities: [
       'Set up the project repository',
       'Setup repo coding standards and guidelines',
@@ -608,6 +614,8 @@ const projects: IProject[] = [
       },
     ],
     position: 'Front-end Web Developer with semi Back-end Role',
+    mainResponsibility:
+      'Develop the front-end for content management system (CMS) for managing blog posts and user comments.',
     responsibilities: [
       'Define the structure of the front-end application',
       'Define and implement the UI/UX design',

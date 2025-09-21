@@ -16,7 +16,7 @@ interface IProject {
   }[];
   position: string;
   technology: string[];
-  mainResponsibility?: string;
+  mainResponsibility: string;
   responsibilities: string[];
 }
 

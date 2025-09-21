@@ -58,11 +58,9 @@ export default function ProjectRoleModal({ open, onClose, project }: Readonly<Pr
           fontWeight='bold'>
           Responsibilities
         </Typography>
-        {project.mainResponsibility && (
-          <Typography variant='body2'>
-            <strong>Main Role:</strong> {project.mainResponsibility}
-          </Typography>
-        )}
+        <Typography variant='body2'>
+          <strong>Main Role:</strong> {project.mainResponsibility}
+        </Typography>
         <Box
           component='ul'
           sx={{ pl: 3, mb: 2 }}>
