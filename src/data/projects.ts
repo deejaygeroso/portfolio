@@ -184,7 +184,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
-      setMemberPosition(memberDeejayGeroso, 'Tech Lead'),
+      setMemberPosition(memberDeejayGeroso, 'Tech Lead & System Architect'),
       {
         linkedIn: '',
         name: 'Micah Uyeharam',
@@ -215,8 +215,7 @@ const projects: IProject[] = [
         webP: adally2WebP,
       },
     ],
-    position:
-      'Tech Lead (Sprint Planning, Designing and implementing Application Architecture, Devops, Back-end, Front-end, Quality Assurance and UI/UX)',
+    position: 'Tech Lead & System Architect',
     technology: [
       'AWS (Route53, ECS with Fargate, ECS with EC2 instance, S3 etc.)',
       'Gitlab CI/CD',
