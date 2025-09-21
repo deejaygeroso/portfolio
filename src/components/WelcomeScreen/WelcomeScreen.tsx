@@ -10,7 +10,7 @@ import { styled } from '@mui/material/styles';
 
 import { deejay250x250 } from '@/assets/images';
 import ViewMyWorkButton from '@/components/ViewMyWorkButton';
-import { ContainerPageIds } from '@/enums';
+import { SectionPageIds } from '@/enums';
 
 import executeTitleTypeAnimation from './executeTitleTypeAnimation';
 
@@ -38,6 +38,8 @@ export default function WelcomeScreen(): JSX.Element {
 
   return (
     <Box
+      id={SectionPageIds.MAIN_PAGE}
+      component='section'
       sx={{
         minHeight: '100vh',
         backgroundImage: 'url(/main-wallpaper.webp)',
@@ -56,7 +58,6 @@ export default function WelcomeScreen(): JSX.Element {
           minHeight: '100vh',
         }}>
         <Container
-          id={ContainerPageIds.MAIN_PAGE}
           sx={{
             display: 'flex',
             alignItems: 'center',

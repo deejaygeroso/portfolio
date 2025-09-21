@@ -1,1 +1,1 @@
-export { default as ContainerPageIds } from './ContainerPageIds';
+export { default as SectionPageIds } from './SectionPageIds';

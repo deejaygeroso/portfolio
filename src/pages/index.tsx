@@ -1,12 +1,15 @@
+import { JSX } from 'react';
+
+import Projects from '@/components/Projects';
+import Testimonials from '@/components/Testimonials';
 import WelcomeScreen from '@/components/WelcomeScreen';
-import type { AppProps } from 'next/app';
 
-export default function MyApp(props: Readonly<AppProps>) {
-  const { Component, pageProps } = props;
-
+export default function MyApp(): JSX.Element {
   return (
     <>
       <WelcomeScreen />
+      <Projects />
+      <Testimonials />
     </>
   );
 }
