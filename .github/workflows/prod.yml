@@ -24,8 +24,8 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: '20'
-          pnpm_version: '9'
+          node_version: "22.20.0"
+          pnpm_version: "10.17.1"
 
       # Set Version Tag
       - name: Set Version Tag
