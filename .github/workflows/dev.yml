@@ -24,8 +24,8 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: '20'
-          pnpm_version: '9'
+          node_version: "22.20.0"
+          pnpm_version: "10.17.1"
 
       # Generate Prisma Client (Required for building and testing the App)
       # - name: Generate Prisma Client
@@ -47,17 +47,17 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: '20'
-          pnpm_version: '9'
+          node_version: "22.20.0"
+          pnpm_version: "10.17.1"
 
       # Vulnerability & Secret scan
       - name: Vulnerability & Secret scan
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
-          format: 'table'
-          exit-code: '1'
+          scan-type: "fs"
+          format: "table"
+          exit-code: "1"
           ignore-unfixed: false
-          severity: 'CRITICAL,HIGH,MEDIUM'
-          scanners: 'secret,vuln'
-          vuln-type: 'library'
+          severity: "CRITICAL,HIGH,MEDIUM"
+          scanners: "secret,vuln"
+          vuln-type: "library"
