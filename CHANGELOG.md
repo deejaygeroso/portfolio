@@ -1,5 +1,11 @@
 # portfolio
 
+## 1.3.0
+
+### Minor Changes
+
+- Use latest node version 22.20.0 LTS
+
 ## 1.2.1
 
 ### Patch Changes
