@@ -6,6 +6,12 @@
 
 - Use latest node version 22.20.0 LTS
 
+## 1.2.1
+
+### Patch Changes
+
+- Fixed linting
+
 ## 1.2.0
 
 ### Minor Changes
