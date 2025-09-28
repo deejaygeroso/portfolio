@@ -23,7 +23,16 @@ export default function SectionTitle({ title, subtitle }: Readonly<SectionTitleP
           {title}
         </Typography>
       )}
-      {subtitle && <Typography variant='body1'>{subtitle}</Typography>}
+      {subtitle && (
+        <Typography
+          variant='body1'
+          sx={{
+            pl: { xs: 2, sm: 4, md: 0, lg: 0 },
+            pr: { xs: 2, sm: 4, md: 0, lg: 0 },
+          }}>
+          {subtitle}
+        </Typography>
+      )}
     </Box>
   );
 }
