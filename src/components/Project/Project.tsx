@@ -19,6 +19,9 @@ import {
   Typography,
 } from '@mui/material';
 
+import ProjectRoleModal from '@/components/ProjectRoleModal';
+import TeamMembersModal from '@/components/TeamMembersModal';
+
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -26,6 +29,9 @@ import { ProjectProps } from './types';
 
 export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.Element {
   const photos = project.photos ?? [];
+
+  const [teamMembersModalOpen, setTeamMembersModalOpen] = useState(false);
+  const [projectRoleModalOpen, setProjectRoleModalOpen] = useState(false);
 
   const [aspectRatio, setAspectRatio] = useState<number | null>(null);
 
@@ -114,10 +120,29 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
             color='primary'>
             <OpenInNewIcon />
           </IconButton>
-          <Button size='small'>Role</Button>
-          <Button size='small'>Teammates</Button>
+          <Button
+            size='small'
+            onClick={(): void => setProjectRoleModalOpen(true)}>
+            Role
+          </Button>
+          <Button
+            size='small'
+            onClick={(): void => setTeamMembersModalOpen(true)}>
+            Teammates
+          </Button>
         </CardActions>
       </Card>
+
+      <TeamMembersModal
+        open={teamMembersModalOpen}
+        onClose={(): void => setTeamMembersModalOpen(false)}
+        teamMembers={project.members}
+      />
+      <ProjectRoleModal
+        open={projectRoleModalOpen}
+        onClose={(): void => setProjectRoleModalOpen(false)}
+        project={project}
+      />
     </Container>
   );
 }
