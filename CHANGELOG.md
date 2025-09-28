@@ -1,5 +1,11 @@
 # portfolio
 
+## 1.4.0
+
+### Minor Changes
+
+- Add Swiper to images
+
 ## 1.3.0
 
 ### Minor Changes

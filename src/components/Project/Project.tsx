@@ -1,12 +1,13 @@
-import { JSX, useState } from 'react';
+import { useState } from 'react';
 
+import { JSX } from '@emotion/react/jsx-runtime';
 import Image from 'next/image';
 
-import EngineeringIcon from '@mui/icons-material/Engineering';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import {
   Avatar,
+  Box,
   Button,
   Card,
   CardActions,
@@ -17,132 +18,106 @@ import {
   IconButton,
   Typography,
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
 
-import TeamMembersModal from '@/components/TeamMembersModal';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import ProjectRoleModal from '../ProjectRoleModal';
 import { ProjectProps } from './types';
 
-const ProjectImage = styled(Image)(() => ({
-  objectFit: 'contain',
-  maxWidth: '100%',
-  maxHeight: '100%',
-  height: 'auto',
-  width: 'auto',
-}));
+export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.Element {
+  const photos = project.photos ?? [];
 
-export default function Project({ project }: Readonly<ProjectProps>): JSX.Element {
-  const [teamMembersModalOpen, setTeamMembersModalOpen] = useState(false);
-  const [projectRoleModalOpen, setProjectRoleModalOpen] = useState(false);
+  const [aspectRatio, setAspectRatio] = useState<number | null>(null);
 
-  const goToLink = (url: string): void => {
-    if (!url) {
-      alert('Sorry, Project no longer exists.');
-      return;
-    }
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
   return (
-    <Container
-      sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        textAlign: 'center',
-        py: { xs: 1, sm: 2, md: 6 },
-      }}>
-      <Card sx={{ maxWidth: 845 }}>
+    <Container sx={{ py: { xs: 1, sm: 2, md: 6 } }}>
+      <Card sx={{ width: '100%', maxWidth: 845, mx: 'auto' }}>
         <CardHeader
-          avatar={<Avatar aria-label='recipe'>{project.name.charAt(0)}</Avatar>}
+          avatar={<Avatar>{project.name.charAt(0)}</Avatar>}
           action={
-            <IconButton aria-label='settings'>
+            <IconButton>
               <MoreVertIcon />
             </IconButton>
           }
           title={project.name}
           subheader={project.date}
-          slotProps={{
-            title: {
-              fontSize: '1.25rem',
-              fontWeight: 'bold',
-            },
-            subheader: {
-              fontSize: '0.675rem',
-            },
-          }}
-          sx={{
-            borderBottom: '1px solid #ccc',
-          }}
+          sx={{ borderBottom: '1px solid #ccc' }}
         />
+
         <CardMedia
           sx={{
-            maxHeight: 720,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            position: 'relative', // required for next/image fill
+            width: '100%',
+            position: 'relative',
             overflow: 'hidden',
+            background: '#f1f1f1',
+            // fallback default height before image loads
+            height: aspectRatio ? 'auto' : { xs: 240, sm: 360, md: 480 },
+            aspectRatio: aspectRatio ? `${1 / aspectRatio} / 1` : 'unset',
           }}>
-          <ProjectImage
-            src={project.photos[0].webP}
-            alt={project.name}
-          />
-        </CardMedia>
-        <CardContent sx={{ textAlign: 'left' }}>
-          <Typography
-            variant='body2'
+          <Box
             sx={{
-              color: 'text.secondary',
-              verticalAlign: 'middle',
-              display: 'flex',
-              alignItems: 'center',
-              mb: 1,
-              gap: 1,
+              width: '100%',
+              height: '100%',
+              '&:hover .swiper-button-next, &:hover .swiper-button-prev': {
+                opacity: 1,
+              },
+              '.swiper-button-next, .swiper-button-prev': {
+                opacity: 0,
+                transition: 'opacity 0.3s',
+                color: '#000',
+              },
+              '.swiper-button-disabled': {
+                opacity: '0 !important',
+                pointerEvents: 'none',
+              },
             }}>
-            <EngineeringIcon /> {project.position}
-          </Typography>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              navigation
+              pagination={{ clickable: true }}
+              style={{ width: '100%', height: '100%' }}>
+              {photos.map((photo, idx) => (
+                <SwiperSlide key={photo.webP as string}>
+                  <Box sx={{ width: '100%', height: '100%', position: 'relative' }}>
+                    <Image
+                      src={photo.webP}
+                      alt={`${project.name} ${idx + 1}`}
+                      fill
+                      style={{ objectFit: 'contain' }}
+                      onLoad={
+                        idx === 0
+                          ? e => {
+                              const { naturalWidth, naturalHeight } = e.currentTarget;
+                              setAspectRatio(naturalHeight / naturalWidth);
+                            }
+                          : undefined
+                      }
+                    />
+                  </Box>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Box>
+        </CardMedia>
+
+        <CardContent>
           <Typography
             variant='body2'
-            sx={{ color: 'text.secondary' }}>
+            color='text.secondary'>
             {project.description}
           </Typography>
         </CardContent>
-        <CardActions
-          disableSpacing
-          sx={{
-            borderTop: '1px solid #ccc',
-          }}>
+
+        <CardActions>
           <IconButton
-            onClick={(): void => goToLink(project.domains[0]?.url)}
-            color='primary'
-            aria-label='open project link'
-            size='small'>
+            onClick={() => window.open(project.domains[0]?.url, '_blank', 'noopener,noreferrer')}
+            color='primary'>
             <OpenInNewIcon />
           </IconButton>
-          <Button
-            size='small'
-            onClick={(): void => setProjectRoleModalOpen(true)}>
-            Role
-          </Button>
-          <Button
-            size='small'
-            onClick={(): void => setTeamMembersModalOpen(true)}>
-            Teammates
-          </Button>
+          <Button size='small'>Role</Button>
+          <Button size='small'>Teammates</Button>
         </CardActions>
       </Card>
-      <TeamMembersModal
-        open={teamMembersModalOpen}
-        onClose={(): void => setTeamMembersModalOpen(false)}
-        teamMembers={project.members}
-      />
-      <ProjectRoleModal
-        open={projectRoleModalOpen}
-        onClose={(): void => setProjectRoleModalOpen(false)}
-        project={project}
-      />
     </Container>
   );
 }
