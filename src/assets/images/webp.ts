@@ -28,6 +28,8 @@ import papaRodsWebP from '@/assets/images/persons/roderick-gohetia.webp';
 import saraJavan250x250WebP from '@/assets/images/persons/sara-javan-250x250.webp';
 import saraJavanWebP from '@/assets/images/persons/sara-javan.webp';
 import sherylWebP from '@/assets/images/persons/sheryl-picante.webp';
+import sylviaEspina250x250WebP from '@/assets/images/persons/sylvia-espina-250x250.webp';
+import tinaRaftopoulos250x250WebP from '@/assets/images/persons/tina-raftopoulos-250x250.webp';
 import vanessa250x250WebP from '@/assets/images/persons/vanessa-faith-abordo-250x250.webp';
 import vanessaWebP from '@/assets/images/persons/vanessa-faith-abordo.webp';
 // Projects Images
@@ -84,6 +86,8 @@ export {
   saraJavanWebP,
   saraJavan250x250WebP,
   sherylWebP,
+  sylviaEspina250x250WebP,
+  tinaRaftopoulos250x250WebP,
   vanessaWebP,
   vanessa250x250WebP,
 };

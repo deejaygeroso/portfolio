@@ -1,9 +1,34 @@
 import { ITestimonial } from '@/interfaces'
 
-import { denmark250x250, dustin250x250, saraJavan250x250, vanessa250x250 } from '../assets/images'
-import { denmark250x250WebP, dustin250x250WebP, saraJavan250x250WebP, vanessa250x250WebP } from '../assets/images/webp'
+import { denmark250x250, dustin250x250, saraJavan250x250, sylviaEspina250x250, tinaRaftopoulos250x250, vanessa250x250 } from '../assets/images'
+import { denmark250x250WebP, dustin250x250WebP, saraJavan250x250WebP, sylviaEspina250x250WebP, tinaRaftopoulos250x250WebP, vanessa250x250WebP } from '../assets/images/webp'
 
 const testimonials: ITestimonial[] = [
+    {
+    comments: [
+      "Deejay is a passionate developer who is well-versed in React and the third-party integration tool Syncfusion Document Editor. Deejay was in my team at Medirecords, a SAAS for GP and Allied Health Professionals. He is committed to finding the best and most optimum solution when developing our feature and product(s), thoroughly researches tools, and documentation and works his way through any development problem big or small. He is a great contribution to the team, great to work with and a great developer.",
+      "I highly recommend Deejay for any project or company and I am very happy to have the opportunity to work with him.",
+    ],
+    date: 'Febraury 2, 2023',
+    name: 'Tina Raftopoulos',
+    photo: {
+      default: tinaRaftopoulos250x250,
+      webp: tinaRaftopoulos250x250WebP,
+    },
+    position: 'Product Owner @ Medirecords',
+  },
+    {
+    comments: [
+      "Deejay is one of the great developers that I have worked with.  He's very knowledgeable and always ready to help every member of the team. He also makes sure that he understood the product and gives suggestions for any improvements needed.",
+    ],
+    date: 'October 14, 2022',
+    name: 'Sylvia Espiña',
+    photo: {
+      default: sylviaEspina250x250,
+      webp: sylviaEspina250x250WebP,
+    },
+    position: 'Software Quality Assurance Analyst @ Medirecords',
+  },
   {
     comments: [
       "Deejay is one of the most hardworking and passionate developers I've ever worked with. His communication skills are his strengths.",
