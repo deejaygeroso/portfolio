@@ -28,6 +28,8 @@ import papaRods from '@/assets/images/persons/roderick-gohetia.jpg';
 import saraJavan250x250 from '@/assets/images/persons/sara-javan-250x250.jpeg';
 import saraJavan from '@/assets/images/persons/sara-javan.jpeg';
 import sheryl from '@/assets/images/persons/sheryl-picante.jpg';
+import sylviaEspina250x250 from '@/assets/images/persons/sylvia-espina-250x250.jpg';
+import tinaRaftopoulos250x250 from '@/assets/images/persons/tina-raftopoulos-250x250.jpg';
 import vanessa250x250 from '@/assets/images/persons/vanessa-faith-abordo-250x250.jpg';
 import vanessa from '@/assets/images/persons/vanessa-faith-abordo.jpg';
 // Projects Images
@@ -84,6 +86,8 @@ export {
   saraJavan,
   saraJavan250x250,
   sheryl,
+  sylviaEspina250x250,
+  tinaRaftopoulos250x250,
   vanessa,
   vanessa250x250,
 };
