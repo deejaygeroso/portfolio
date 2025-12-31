@@ -1,5 +1,11 @@
 # portfolio
 
+## 2.1.0
+
+### Minor Changes
+
+- Added Latest Testimonials
+
 ## 2.0.0
 
 ### Major Changes
