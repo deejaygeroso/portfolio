@@ -1,30 +1,39 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import unusedImports from 'eslint-plugin-unused-imports';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+import unusedImports from "eslint-plugin-unused-imports";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+export default defineConfig([
+  // ✅ Next.js core rules
+  ...nextVitals,
+  ...nextTs,
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  // ✅ Your custom rules
   {
-    ignores: ['node_modules/**', '.next/**', 'out/**', 'build/**', 'next-env.d.ts'],
     plugins: {
-      'unused-imports': unusedImports,
+      "unused-imports": unusedImports,
     },
     rules: {
       // 🚫 Error on unused imports
-      'unused-imports/no-unused-imports': 'error',
+      "unused-imports/no-unused-imports": "error",
 
-      // 🚫 Error on unused variables, but allow _var as ignored
-      'unused-imports/no-unused-vars': ['warn', { vars: 'all', varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
+      // ⚠️ Warn on unused vars, allow _var
+      "unused-imports/no-unused-vars": [
+        "warn",
+        {
+          vars: "all",
+          varsIgnorePattern: "^_",
+          argsIgnorePattern: "^_",
+        },
+      ],
     },
   },
-];
 
-export default eslintConfig;
+  // ✅ Override default ignores (same as Next generator)
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
