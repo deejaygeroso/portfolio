@@ -1,5 +1,11 @@
 # portfolio
 
+## 2.0.0
+
+### Major Changes
+
+- Next v16 & Upgrade all rest of dependencies to their latest versions
+
 ## 1.4.1
 
 ### Patch Changes
