@@ -24,8 +24,8 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: "22.20.0"
-          pnpm_version: "10.17.1"
+          node_version: "24.11.1"
+          pnpm_version: "10.24.0"
 
       # Generate Prisma Client (Required for building and testing the App)
       # - name: Generate Prisma Client
@@ -47,8 +47,8 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: "22.20.0"
-          pnpm_version: "10.17.1"
+          node_version: "24.11.1"
+          pnpm_version: "10.24.0"
 
       # Vulnerability & Secret scan
       - name: Vulnerability & Secret scan
