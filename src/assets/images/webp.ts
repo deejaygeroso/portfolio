@@ -44,6 +44,7 @@ import dejablogWebP from '@/assets/images/projects/dejablog/dejablog.webp';
 import helpbertWebP from '@/assets/images/projects/helpbert/helpbert.webp';
 import meegleWebP from '@/assets/images/projects/meegle/meegle.webp';
 import monitoringWebP from '@/assets/images/projects/monitoring/monitoring.webp';
+import performativWebP from '@/assets/images/projects/performativ/performativ.webp';
 
 export {
   adally1WebP,
@@ -81,6 +82,7 @@ export {
   meegleWebP,
   monitoringWebP,
   papaRodsWebP,
+  performativWebP,
   portiaWebP,
   richardWebP,
   saraJavanWebP,

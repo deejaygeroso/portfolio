@@ -44,6 +44,7 @@ import dejablog from '@/assets/images/projects/dejablog/dejablog.jpg';
 import helpbert from '@/assets/images/projects/helpbert/helpbert.jpg';
 import meegle from '@/assets/images/projects/meegle/meegle.jpg';
 import monitoring from '@/assets/images/projects/monitoring/monitoring.jpg';
+import performativ from '@/assets/images/projects/performativ/performativ.png';
 
 export {
   adally1,
@@ -81,6 +82,7 @@ export {
   meegle,
   monitoring,
   papaRods,
+  performativ,
   portia,
   richard,
   saraJavan,

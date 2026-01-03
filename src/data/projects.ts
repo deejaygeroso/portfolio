@@ -33,6 +33,7 @@ import {
   meegle,
   monitoring,
   papaRods,
+  performativ,
   portia,
   richard,
   saraJavan,
@@ -72,6 +73,7 @@ import {
   meegleWebP,
   monitoringWebP,
   papaRodsWebP,
+  performativWebP,
   portiaWebP,
   richardWebP,
   saraJavanWebP,
@@ -112,6 +114,96 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 };
 
 const projects: IProject[] = [
+    {
+    address: 'Main headquarters in Copenhagen, Denmark (Kronprinsensgade 2, 1114 Copenhagen K), and a UK registered office at 71-75 Shelton Street, London (WC2H 9JQ), also listing offices in Utrecht and Zurich',
+    date: 'August 2021 - February 2022',
+    description:
+      'Performativ is a startup software company providing asset management solutions that help financial institutions manage client investments with greater accuracy and efficiency.',
+    domains: [
+      {
+        name: 'performativ.com',
+        url: 'https://performativ.com',
+      },
+    ],
+    members: [
+      setMemberPosition(memberDeejayGeroso, 'Acting FE Lead, Senior Front-end Developer'),
+      {
+        linkedIn: 'https://au.linkedin.com/in/bec-price',
+        name: 'Bec Price',
+        photo: {
+          jpg: becPrice,
+          webP: becPriceWebP,
+        },
+        position: 'Business Analyst',
+      },
+      {
+        linkedIn: 'https://au.linkedin.com/in/mark-lalor-40a78214',
+        name: 'Mark Lalor',
+        photo: {
+          jpg: markLalor,
+          webP: markLalorWebP,
+        },
+        position: 'System Architect, Head of Team & CEO of ProcQ',
+      },
+      {
+        linkedIn: 'https://au.linkedin.com/in/sarajavan',
+        name: 'Sara Javan',
+        photo: {
+          jpg: saraJavan,
+          webP: saraJavanWebP,
+        },
+        position: 'Senior UI UX Designer',
+      },
+      {
+        linkedIn: 'https://ph.linkedin.com/in/brian-alcuaz',
+        name: 'Brian Alcuaz',
+        photo: {
+          jpg: brianAlcuaz,
+          webP: brianAlcuazWebP,
+        },
+        position: 'Quality Assurance',
+      },
+    ],
+    name: 'Performativ',
+    photos: [
+      {
+        jpg: performativ,
+        webP: performativWebP,
+      },
+    ],
+    position: 'Acting FE Lead, Senior Front-end Developer',
+    mainResponsibility:
+      "Responsible for frontend technical direction, coding standards and guidelines, code quality, API integration, and delivery, while enabling the team to build scalable, maintainable, and high-quality user experiences.",
+    responsibilities: [
+      'Define and enforce frontend coding standards and guidelines',
+      'Improve repository structure and directory architecture',
+      'Reimplement Auth0 authentication to fix bugs and incorrect behavior',
+      'Plan component abstractions and refactor for reusability',
+      'Plan features and break them down into clear technical tasks',
+      'Delegate frontend tasks and ensure timely delivery',
+      'Select appropriate technologies and third-party packages',
+      'Review frontend pull requests and maintain code quality',
+      'Set up and enforce unit testing practices',
+      'Configure and maintain linting and Prettier',
+      'Create GitHub pipelines for testing, linting, and security checks',
+      'Remove dead code and reduce technical debt',
+      'Analyze UI/UX and define improvement plans',
+      'Implement new UI features and product enhancements',
+      'Set up Cypress end-to-end testing',
+      'Integrate E2E tests into existing build pipelines',
+      'Create basic E2E CRUD tests as QA references',
+    ],
+    technology: [
+      'React', 
+      'React Query', 
+      'Typescript', 
+      'Auth0', 
+      'Ant-D', 
+      'i18next', 
+      'Cypress', 
+      'PHP Laravel',
+    ],
+  },
   {
     address: 'Level 9/70 Pitt St, Sydney NSW 2000, Australia',
     date: 'August 2020 - April 2021',
