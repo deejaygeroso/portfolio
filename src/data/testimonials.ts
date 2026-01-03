@@ -74,7 +74,7 @@ const testimonials: ITestimonial[] = [
   },
   {
     comments: [
-      'Deejay is a proficient React Native developer and a great team player. He is knowledgeable not only on frontend, but on backend and devops roles as well. He can do full stack development but more focus on mobile.',
+      'Deejay is a proficient React Native developer and a great team player. He is knowledgeable not only on front-end, but on backend and devops roles as well. He can do full stack development but more focus on mobile.',
     ],
     date: 'March 2, 2019',
     name: 'Vanessa Faith Abordo',

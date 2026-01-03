@@ -1,4 +1,4 @@
-import React, { EffectCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { JSX } from '@emotion/react/jsx-runtime';
 import Image from 'next/image';
@@ -11,8 +11,6 @@ import { styled } from '@mui/material/styles';
 import { deejay250x250 } from '@/assets/images';
 import ViewMyWorkButton from '@/components/ViewMyWorkButton';
 import { SectionPageIds } from '@/enums';
-
-import executeTitleTypeAnimation from './executeTitleTypeAnimation';
 
 const ProfileImage = styled(Image)(({ theme }) => ({
   borderRadius: '50%',
@@ -32,8 +30,10 @@ const ProfileImage = styled(Image)(({ theme }) => ({
 }));
 
 export default function WelcomeScreen(): JSX.Element {
-  useEffect((): ReturnType<EffectCallback> => {
-    executeTitleTypeAnimation();
+  useEffect(() => {
+    import('./executeTitleTypeAnimation').then(({ default: executeTitleTypeAnimation }) => {
+      executeTitleTypeAnimation();
+    });
   }, []);
 
   return (

@@ -26,6 +26,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { ProjectProps } from './types';
+import { IProject } from '@/interfaces';
 
 export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.Element {
   const photos = project.photos ?? [];
@@ -34,6 +35,14 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
   const [projectRoleModalOpen, setProjectRoleModalOpen] = useState(false);
 
   const [aspectRatio, setAspectRatio] = useState<number | null>(null);
+
+  const renderSubHeader = (project: IProject): string => {
+    if (!project.date) {
+      return project.position;
+    }
+
+    return `${project.position} (${project.date})`; 
+  }
 
   return (
     <Container sx={{ py: { xs: 1, sm: 2, md: 6 } }}>
@@ -46,7 +55,7 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
             </IconButton>
           }
           title={project.name}
-          subheader={project.date}
+          subheader={renderSubHeader(project)}
           sx={{ borderBottom: '1px solid #ccc' }}
         />
 
