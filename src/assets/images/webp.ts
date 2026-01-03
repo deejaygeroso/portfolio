@@ -1,9 +1,10 @@
 // Persons
+import albertGeislerFoxWebP from '@/assets/images/persons/albert-geisler-fox.webp';
 import angelaWebP from '@/assets/images/persons/angela-doloricon.webp';
 import aryenWebP from '@/assets/images/persons/aryen-jim-bejagan.webp';
 import becPriceWebP from '@/assets/images/persons/bec-price.webp';
 import brianAlcuazWebP from '@/assets/images/persons/brian-alcuaz.webp';
-import junskiWebP from '@/assets/images/persons/casan-jr-mala.webp';
+import donKennethDemayoWebP from '@/assets/images/persons/don-kenneth-demayo.webp';
 import chrisWebP from '@/assets/images/persons/christopher-bradshaw.webp';
 import deejay250x250WebP from '@/assets/images/persons/deejay-geroso-250x250.webp';
 import deejayWebP from '@/assets/images/persons/deejay-geroso.webp';
@@ -11,17 +12,25 @@ import denmark250x250WebP from '@/assets/images/persons/denmark-tabiolo-250x250.
 import denmarkWebP from '@/assets/images/persons/denmark-tabiolo.webp';
 import dustin250x250WebP from '@/assets/images/persons/dustin-watkins-250x250.webp';
 import dustinWebP from '@/assets/images/persons/dustin-watkins.webp';
+import erickWebP from '@/assets/images/persons/john-erick-madduma.webp';
+import eskildBennedsenWebP from '@/assets/images/persons/eskild-bennedsen.webp';
 import faithHallWebP from '@/assets/images/persons/faith-hall.webp';
 import giovanniWebP from '@/assets/images/persons/giovanni-lobitos.webp';
 import hazelWebP from '@/assets/images/persons/hazel-ko-lumactod.webp';
 import jalilWebP from '@/assets/images/persons/jalil-laguindab.webp';
 import jasonWebP from '@/assets/images/persons/jason-abella.webp';
 import jdWebP from '@/assets/images/persons/jd.webp';
-import erickWebP from '@/assets/images/persons/john-erick-madduma.webp';
+import jeeAnnWebP from '@/assets/images/persons/jee-ann-rivera.webp';
 import jonCesarWebP from '@/assets/images/persons/jon-cesar-tagsip.webp';
+import junskiWebP from '@/assets/images/persons/casan-jr-mala.webp';
 import justinWebP from '@/assets/images/persons/justin-behnke.webp';
+import katrinaLozadaWebP from '@/assets/images/persons/katrina-lozada.webp';
 import marcoPapsWebP from '@/assets/images/persons/marco-budiongan.webp';
 import markLalorWebP from '@/assets/images/persons/mark-lalor.webp';
+import markMarilagWebP from '@/assets/images/persons/mark-marilag.webp';
+import oliverDiamondWebP from '@/assets/images/persons/oliver-diamond.webp';
+import pavelSromWebP from '@/assets/images/persons/pavel-srom.webp';
+import peterBarryWebP from '@/assets/images/persons/peter-barry.webp';
 import portiaWebP from '@/assets/images/persons/portia-linao.webp';
 import richardWebP from '@/assets/images/persons/richard-paul-salem.webp';
 import papaRodsWebP from '@/assets/images/persons/roderick-gohetia.webp';
@@ -47,6 +56,7 @@ import monitoringWebP from '@/assets/images/projects/monitoring/monitoring.webp'
 import performativWebP from '@/assets/images/projects/performativ/performativ.webp';
 
 export {
+  albertGeislerFoxWebP,
   adally1WebP,
   adally2WebP,
   angelaWebP,
@@ -62,11 +72,13 @@ export {
   deejay250x250WebP,
   denmarkWebP,
   denmark250x250WebP,
+  donKennethDemayoWebP,
   dustinWebP,
   dustin250x250WebP,
   databasedWebP,
   dejablogWebP,
   erickWebP,
+  eskildBennedsenWebP,
   faithHallWebP,
   giovanniWebP,
   hazelWebP,
@@ -74,15 +86,21 @@ export {
   jalilWebP,
   jasonWebP,
   jdWebP,
+  jeeAnnWebP,
   jonCesarWebP,
   junskiWebP,
   justinWebP,
+  katrinaLozadaWebP,
   marcoPapsWebP,
   markLalorWebP,
+  markMarilagWebP,
   meegleWebP,
   monitoringWebP,
+  oliverDiamondWebP,
   papaRodsWebP,
+  pavelSromWebP,
   performativWebP,
+  peterBarryWebP,
   portiaWebP,
   richardWebP,
   saraJavanWebP,
