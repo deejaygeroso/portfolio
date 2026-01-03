@@ -1,5 +1,11 @@
 # portfolio
 
+## 2.2.0
+
+### Minor Changes
+
+- Added Performativ to list of Projects
+
 ## 2.1.0
 
 ### Minor Changes
