@@ -1,4 +1,4 @@
-import React, { EffectCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { JSX } from '@emotion/react/jsx-runtime';
 import Image from 'next/image';
