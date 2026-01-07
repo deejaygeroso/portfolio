@@ -101,6 +101,9 @@ export default function TestimonialList(): JSX.Element {
                         sm: '1.25rem',
                         md: '1.8rem',
                       },
+                      pb: 0,
+                      mb: 0,
+                      lineHeight: 1.2,
                     }}>
                     {t.name}
                   </Typography>
@@ -108,7 +111,10 @@ export default function TestimonialList(): JSX.Element {
 
                 <Typography
                   variant='body2'
-                  color='text.secondary'>
+                  color='#3a6de7'
+                  sx={{
+                    fontWeight: 'bold',
+                  }}>
                   {t.position}
                 </Typography>
                 <Typography

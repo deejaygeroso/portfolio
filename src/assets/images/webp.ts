@@ -1,18 +1,19 @@
 // Persons
 import albertGeislerFoxWebP from '@/assets/images/persons/albert-geisler-fox.webp';
+import ameerKhalaf600x600WebP from '@/assets/images/persons/ameer-khalaf-600x600.webp';
 import angelaWebP from '@/assets/images/persons/angela-doloricon.webp';
 import aryenWebP from '@/assets/images/persons/aryen-jim-bejagan.webp';
 import becPriceWebP from '@/assets/images/persons/bec-price.webp';
 import brianAlcuazWebP from '@/assets/images/persons/brian-alcuaz.webp';
-import donKennethDemayoWebP from '@/assets/images/persons/don-kenneth-demayo.webp';
+import junskiWebP from '@/assets/images/persons/casan-jr-mala.webp';
 import chrisWebP from '@/assets/images/persons/christopher-bradshaw.webp';
 import deejay250x250WebP from '@/assets/images/persons/deejay-geroso-250x250.webp';
 import deejayWebP from '@/assets/images/persons/deejay-geroso.webp';
 import denmark250x250WebP from '@/assets/images/persons/denmark-tabiolo-250x250.webp';
 import denmarkWebP from '@/assets/images/persons/denmark-tabiolo.webp';
+import donKennethDemayoWebP from '@/assets/images/persons/don-kenneth-demayo.webp';
 import dustin250x250WebP from '@/assets/images/persons/dustin-watkins-250x250.webp';
 import dustinWebP from '@/assets/images/persons/dustin-watkins.webp';
-import erickWebP from '@/assets/images/persons/john-erick-madduma.webp';
 import eskildBennedsenWebP from '@/assets/images/persons/eskild-bennedsen.webp';
 import faithHallWebP from '@/assets/images/persons/faith-hall.webp';
 import giovanniWebP from '@/assets/images/persons/giovanni-lobitos.webp';
@@ -21,8 +22,8 @@ import jalilWebP from '@/assets/images/persons/jalil-laguindab.webp';
 import jasonWebP from '@/assets/images/persons/jason-abella.webp';
 import jdWebP from '@/assets/images/persons/jd.webp';
 import jeeAnnWebP from '@/assets/images/persons/jee-ann-rivera.webp';
+import erickWebP from '@/assets/images/persons/john-erick-madduma.webp';
 import jonCesarWebP from '@/assets/images/persons/jon-cesar-tagsip.webp';
-import junskiWebP from '@/assets/images/persons/casan-jr-mala.webp';
 import justinWebP from '@/assets/images/persons/justin-behnke.webp';
 import katrinaLozadaWebP from '@/assets/images/persons/katrina-lozada.webp';
 import marcoPapsWebP from '@/assets/images/persons/marco-budiongan.webp';
@@ -60,6 +61,7 @@ export {
   adally1WebP,
   adally2WebP,
   angelaWebP,
+  ameerKhalaf600x600WebP,
   aryenWebP,
   becPriceWebP,
   brianAlcuazWebP,

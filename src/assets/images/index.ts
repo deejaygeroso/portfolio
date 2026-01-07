@@ -1,18 +1,19 @@
 // Persons
 import albertGeislerFox from '@/assets/images/persons/albert-geisler-fox.jpeg';
+import ameerKhalaf600x600 from '@/assets/images/persons/ameer-khalaf-600x600.jpeg';
 import angela from '@/assets/images/persons/angela-doloricon.jpg';
 import aryen from '@/assets/images/persons/aryen-jim-bejagan.jpg';
 import becPrice from '@/assets/images/persons/bec-price.jpg';
 import brianAlcuaz from '@/assets/images/persons/brian-alcuaz.jpg';
-import donKennethDemayo from '@/assets/images/persons/don-kenneth-demayo.jpeg';
+import junski from '@/assets/images/persons/casan-jr-mala.jpg';
 import chris from '@/assets/images/persons/christopher-bradshaw.jpg';
 import deejay250x250 from '@/assets/images/persons/deejay-geroso-250x250.jpg';
 import deejay from '@/assets/images/persons/deejay-geroso.jpg';
 import denmark250x250 from '@/assets/images/persons/denmark-tabiolo-250x250.jpg';
 import denmark from '@/assets/images/persons/denmark-tabiolo.jpg';
+import donKennethDemayo from '@/assets/images/persons/don-kenneth-demayo.jpeg';
 import dustin250x250 from '@/assets/images/persons/dustin-watkins-250x250.jpg';
 import dustin from '@/assets/images/persons/dustin-watkins.jpg';
-import erick from '@/assets/images/persons/john-erick-madduma.jpg';
 import eskildBennedsen from '@/assets/images/persons/eskild-bennedsen.jpeg';
 import faithHall from '@/assets/images/persons/faith-hall.jpg';
 import giovanni from '@/assets/images/persons/giovanni-lobitos.jpg';
@@ -21,8 +22,8 @@ import jalil from '@/assets/images/persons/jalil-laguindab.jpg';
 import jason from '@/assets/images/persons/jason-abella.jpg';
 import jd from '@/assets/images/persons/jd.jpg';
 import jeeAnn from '@/assets/images/persons/jee-ann-rivera.jpg';
+import erick from '@/assets/images/persons/john-erick-madduma.jpg';
 import jonCesar from '@/assets/images/persons/jon-cesar-tagsip.jpg';
-import junski from '@/assets/images/persons/casan-jr-mala.jpg';
 import justin from '@/assets/images/persons/justin-behnke.jpg';
 import katrinaLozada from '@/assets/images/persons/katrina-lozada.jpeg';
 import marcoPaps from '@/assets/images/persons/marco-budiongan.jpg';
@@ -59,6 +60,7 @@ export {
   adally1,
   adally2,
   albertGeislerFox,
+  ameerKhalaf600x600,
   angela,
   aryen,
   becPrice,
