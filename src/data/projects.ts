@@ -132,8 +132,9 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 };
 
 const projects: IProject[] = [
-    {
-    address: 'Main headquarters in Copenhagen, Denmark (Kronprinsensgade 2, 1114 Copenhagen K), and a UK registered office at 71-75 Shelton Street, London (WC2H 9JQ), also listing offices in Utrecht and Zurich',
+  {
+    address:
+      'Main headquarters in Copenhagen, Denmark (Kronprinsensgade 2, 1114 Copenhagen K), and a UK registered office at 71-75 Shelton Street, London (WC2H 9JQ), also listing offices in Utrecht and Zurich',
     date: 'August 2021 - February 2022',
     description:
       'Performativ is a startup software company providing asset management solutions that help financial institutions manage client investments with greater accuracy and efficiency.',
@@ -144,7 +145,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
-      setMemberPosition(memberDeejayGeroso, 'Acting FE Lead, Senior Front-end Developer'),
+      setMemberPosition(memberDeejayGeroso, 'FE Lead, Senior Front-end Developer'),
       {
         linkedIn: 'https://dk.linkedin.com/in/dkfox',
         name: 'Albert Geisler Fox',
@@ -243,9 +244,9 @@ const projects: IProject[] = [
         webP: performativWebP,
       },
     ],
-    position: 'Acting FE Lead, Senior Front-end Developer',
+    position: 'FE Lead, Senior Front-end Developer',
     mainResponsibility:
-      "Responsible for front-end technical direction, coding standards and guidelines, code quality, API integration, and delivery, while enabling the team to build scalable, maintainable, and high-quality user experiences.",
+      'Responsible for front-end technical direction, coding standards and guidelines, code quality, API integration, and delivery, while enabling the team to build scalable, maintainable, and high-quality user experiences.',
     responsibilities: [
       'Define and enforce front-end coding standards and guidelines',
       'Improve repository structure and directory architecture',
@@ -265,16 +266,7 @@ const projects: IProject[] = [
       'Integrate E2E tests into existing build pipelines',
       'Create basic E2E CRUD tests as QA references',
     ],
-    technology: [
-      'React', 
-      'React Query', 
-      'Typescript', 
-      'Auth0', 
-      'Ant-D', 
-      'i18next', 
-      'Cypress', 
-      'PHP Laravel',
-    ],
+    technology: ['React', 'React Query', 'Typescript', 'Auth0', 'Ant-D', 'i18next', 'Cypress', 'PHP Laravel'],
   },
   {
     address: 'Level 9/70 Pitt St, Sydney NSW 2000, Australia',
