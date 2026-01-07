@@ -145,7 +145,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
-      setMemberPosition(memberDeejayGeroso, 'FE Lead, Senior Front-end Developer'),
+      setMemberPosition(memberDeejayGeroso, 'Front-end Tech Lead'),
       {
         linkedIn: 'https://dk.linkedin.com/in/dkfox',
         name: 'Albert Geisler Fox',
@@ -244,7 +244,7 @@ const projects: IProject[] = [
         webP: performativWebP,
       },
     ],
-    position: 'FE Lead, Senior Front-end Developer',
+    position: 'Front-end Tech Lead',
     mainResponsibility:
       'Responsible for front-end technical direction, coding standards and guidelines, code quality, API integration, and delivery, while enabling the team to build scalable, maintainable, and high-quality user experiences.',
     responsibilities: [
