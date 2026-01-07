@@ -1,13 +1,43 @@
-import { ITestimonial } from '@/interfaces'
+import { ITestimonial } from '@/interfaces';
 
-import { denmark250x250, dustin250x250, saraJavan250x250, sylviaEspina250x250, tinaRaftopoulos250x250, vanessa250x250 } from '../assets/images'
-import { denmark250x250WebP, dustin250x250WebP, saraJavan250x250WebP, sylviaEspina250x250WebP, tinaRaftopoulos250x250WebP, vanessa250x250WebP } from '../assets/images/webp'
+import {
+  ameerKhalaf600x600,
+  denmark250x250,
+  dustin250x250,
+  saraJavan250x250,
+  sylviaEspina250x250,
+  tinaRaftopoulos250x250,
+  vanessa250x250,
+} from '../assets/images';
+import {
+  ameerKhalaf600x600WebP,
+  denmark250x250WebP,
+  dustin250x250WebP,
+  saraJavan250x250WebP,
+  sylviaEspina250x250WebP,
+  tinaRaftopoulos250x250WebP,
+  vanessa250x250WebP,
+} from '../assets/images/webp';
 
 const testimonials: ITestimonial[] = [
-    {
+  {
     comments: [
-      "Deejay is a passionate developer who is well-versed in React and the third-party integration tool Syncfusion Document Editor. Deejay was in my team at Medirecords, a SAAS for GP and Allied Health Professionals. He is committed to finding the best and most optimum solution when developing our feature and product(s), thoroughly researches tools, and documentation and works his way through any development problem big or small. He is a great contribution to the team, great to work with and a great developer.",
-      "I highly recommend Deejay for any project or company and I am very happy to have the opportunity to work with him.",
+      'I had the pleasure of leading DJ and working closely with him as a senior developer. He is highly knowledgeable, with strong frontend expertise and clear leadership qualities.',
+      'DJ played an important role in shaping our frontend strategy and significantly improving the quality and stability of our platform. He approaches problems calmly, communicates clearly, and earns trust through both his judgment and execution. He consistently took ownership of complex work, mentored others, and raised the overall engineering standard of the team.',
+      'I highly recommend DJ and would gladly work with him again.',
+    ],
+    date: 'January 6, 2026',
+    name: 'Ameer Khalaf',
+    photo: {
+      default: ameerKhalaf600x600,
+      webp: ameerKhalaf600x600WebP,
+    },
+    position: 'Frontend Tech Lead @ Medirecords',
+  },
+  {
+    comments: [
+      'Deejay is a passionate developer who is well-versed in React and the third-party integration tool Syncfusion Document Editor. Deejay was in my team at Medirecords, a SAAS for GP and Allied Health Professionals. He is committed to finding the best and most optimum solution when developing our feature and product(s), thoroughly researches tools, and documentation and works his way through any development problem big or small. He is a great contribution to the team, great to work with and a great developer.',
+      'I highly recommend Deejay for any project or company and I am very happy to have the opportunity to work with him.',
     ],
     date: 'Febraury 2, 2023',
     name: 'Tina Raftopoulos',
@@ -17,7 +47,7 @@ const testimonials: ITestimonial[] = [
     },
     position: 'Product Owner @ Medirecords',
   },
-    {
+  {
     comments: [
       "Deejay is one of the great developers that I have worked with.  He's very knowledgeable and always ready to help every member of the team. He also makes sure that he understood the product and gives suggestions for any improvements needed.",
     ],
@@ -84,6 +114,6 @@ const testimonials: ITestimonial[] = [
     },
     position: 'Software Engineer @ Snapzio Inc.',
   },
-]
+];
 
-export default testimonials
+export default testimonials;
