@@ -272,7 +272,7 @@ const projects: IProject[] = [
       'Engineered Copilot and Cursor rules for design system workflows',
       'Accelerate component work, hooks, APIs, and Kendo migration via AI Agents',
       'Support modular teams with all tech needs and requirements',
-      'Lead Migration strategy of legacy UI (Kendo & React) to use the new Design System',
+      'Lead Migration strategy of legacy UI (Kendo & React) with new Design System',
       'Maintain documentation and visual architecture diagrams for teams',
     ],
     technology: [
