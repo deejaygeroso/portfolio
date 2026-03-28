@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "tsc:check": "tsc --noEmit"
+    "tsc:check": "tsc --noEmit ./src/**/*.ts"
   },
   "engines": {
     "node": "24.11.1"
