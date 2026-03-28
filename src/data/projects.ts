@@ -133,6 +133,151 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 
 const projects: IProject[] = [
   {
+    address: 'Level 5, 1 Elizabeth Plaza, North Sydney NSW 2060',
+    date: 'April 2022 - Present',
+    description:
+      'MediRecords is a cloud-based practice and patient management platform designed for the Australian healthcare ecosystem.',
+    domains: [
+      {
+        name: 'medirecords.com',
+        url: 'https://medirecords.com',
+      },
+    ],
+    members: [
+      setMemberPosition(memberDeejayGeroso, 'Senior Front-end Developer (Core Architecture)'),
+      {
+        linkedIn: 'https://dk.linkedin.com/in/dkfox',
+        name: 'Albert Geisler Fox',
+        photo: {
+          jpg: albertGeislerFox,
+          webP: albertGeislerFoxWebP,
+        },
+        position: 'Founder & CEO',
+      },
+      {
+        linkedIn: 'https://uk.linkedin.com/in/peterbarry',
+        name: 'Peter Barry',
+        photo: {
+          jpg: peterBarry,
+          webP: peterBarryWebP,
+        },
+        position: 'Co-founder & CTO',
+      },
+      {
+        linkedIn: 'https://dk.linkedin.com/in/eskild-bennedsen-477180108',
+        name: 'Eskild Bennedsen',
+        photo: {
+          jpg: eskildBennedsen,
+          webP: eskildBennedsenWebP,
+        },
+        position: 'Operations Manager',
+      },
+      {
+        linkedIn: 'https://uk.linkedin.com/in/oliverdiamond',
+        name: 'Oliver Diamond',
+        photo: {
+          jpg: oliverDiamond,
+          webP: oliverDiamondWebP,
+        },
+        position: 'Senior Dev - Server Side Microservices',
+      },
+      {
+        linkedIn: 'https://dk.linkedin.com/in/pavel-srom-3011a8171',
+        name: 'Pavel Srom',
+        photo: {
+          jpg: pavelSrom,
+          webP: pavelSromWebP,
+        },
+        position: 'React Dev Intern',
+      },
+      {
+        linkedIn: '',
+        name: 'Sebastian Mikkel Lassen',
+        photo: {
+          jpg: null,
+          webP: null,
+        },
+        position: 'Backend Developer',
+      },
+      {
+        linkedIn: 'https://ph.linkedin.com/in/kennethgdemayo',
+        name: 'Don Kenneth Demayo',
+        photo: {
+          jpg: donKennethDemayo,
+          webP: donKennethDemayoWebP,
+        },
+        position: 'Frontend Developer',
+      },
+      {
+        linkedIn: 'https://ph.linkedin.com/in/mark-chriztopher-marilag-746260a8',
+        name: 'Mark Marilag',
+        photo: {
+          jpg: markMarilag,
+          webP: markMarilagWebP,
+        },
+        position: 'Fullstack Developer',
+      },
+      {
+        linkedIn: '',
+        name: 'Jee Ann Rivera',
+        photo: {
+          jpg: jeeAnn,
+          webP: jeeAnnWebP,
+        },
+        position: 'Fullstack Developer',
+      },
+      {
+        linkedIn: 'https://ph.linkedin.com/in/katrin-lozada-9157b211a',
+        name: 'Katrin Lozada',
+        photo: {
+          jpg: katrinaLozada,
+          webP: katrinaLozadaWebP,
+        },
+        position: 'Application Tester',
+      },
+    ],
+    name: 'Medirecords',
+    photos: [
+      {
+        jpg: performativ,
+        webP: performativWebP,
+      },
+    ],
+    position: 'Senior Front-end Developer (Core Architecture)',
+    mainResponsibility:
+      'Responsible for front-end technical direction, coding standards and guidelines, code quality, API integration, and delivery, while enabling the team to build scalable, maintainable, and high-quality user experiences.',
+    responsibilities: [
+      'Shape frontend architecture, technology selection, and roadmap priorities',
+      'Build design system with NX, MUI, React, and Storybook',
+      'Improve UI consistency, component reuse, and development speed',
+      'Centralize reusable frontend libraries in an NX monorepo',
+      'Publish shared frontend packages as private GitHub Packages',
+      'Architect automated CI/CD for dev, staging, and production',
+      'Add hotfixes, security scans, SonarQube, lint, and Prettier',
+      'Establish and enforce frontend architecture standards across teams',
+      'Engineered Copilot and Cursor rules for design system workflows',
+      'Accelerate component work, hooks, APIs, and Kendo migration via AI Agents',
+      'Support modular teams with all tech needs and requirements',
+      'Lead Migration strategy of legacy UI (Kendo & React) to use the new Design System',
+      'Maintain documentation and visual architecture diagrams for teams',
+    ],
+    technology: [
+      'React',
+      'NX',
+      'Lerna',
+      'Vite',
+      'Webpack',
+      'MUI',
+      'Bootstrap',
+      'Storybook',
+      'Cypress',
+      'Kendo',
+      'Syncfusion',
+      'PdfJS',
+      'Java Springboot',
+    ],
+  },
+  {
     address:
       'Main headquarters in Copenhagen, Denmark (Kronprinsensgade 2, 1114 Copenhagen K), and a UK registered office at 71-75 Shelton Street, London (WC2H 9JQ), also listing offices in Utrecht and Zurich',
     date: 'August 2021 - February 2022',
