@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
 
-import { deejay250x250 } from '@/assets/images';
+import { deejay960x960WebP } from '@/assets/images/webp';
 import ViewMyWorkButton from '@/components/ViewMyWorkButton';
 import { SectionPageIds } from '@/enums';
 
@@ -69,7 +69,7 @@ export default function WelcomeScreen(): JSX.Element {
           <ProfileImage
             alt="Deejay Geroso's Profile Picture"
             id='profile-picture'
-            src={deejay250x250}
+            src={deejay960x960WebP}
             priority
           />
           <Typography
