@@ -245,7 +245,7 @@ const projects: IProject[] = [
     ],
     position: 'Senior Front-end Developer (Core Architecture)',
     mainResponsibility:
-      'Responsible for front-end technical direction, coding standards and guidelines, code quality, API integration, and delivery, while enabling the team to build scalable, maintainable, and high-quality user experiences.',
+      'Responsible for core frontend architecture and technical direction—the NX monorepo design system, shared packages, automated CI/CD, and cross-team standards—while supporting modular squads, leading migration from legacy Kendo and React UIs to the new design system, and maintaining documentation plus AI-assisted workflows for consistent, high-quality delivery.',
     responsibilities: [
       'Shape frontend architecture, technology selection, and roadmap priorities',
       'Build design system with NX, MUI, React, and Storybook',
