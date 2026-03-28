@@ -1,5 +1,11 @@
 # portfolio
 
+## 2.5.0
+
+### Minor Changes
+
+- Add Medirecords Project
+
 ## 2.4.0
 
 ### Minor Changes
