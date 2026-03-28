@@ -1,5 +1,11 @@
 # portfolio
 
+## 2.3.0
+
+### Minor Changes
+
+- Upgrade Minor & Patch Version Package Dependencies
+
 ## 2.2.0
 
 ### Minor Changes
