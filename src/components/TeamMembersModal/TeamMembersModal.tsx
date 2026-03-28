@@ -15,9 +15,24 @@ import {
   Typography,
 } from '@mui/material';
 
+import { IMember } from '@/interfaces';
+
 import { TeamMembersModalProps } from './types';
 
 export default function TeamMembersModal({ open, onClose, teamMembers }: Readonly<TeamMembersModalProps>): JSX.Element {
+  const getLinkedInProps = (linkedIn: IMember['linkedIn']) => {
+    const linkedInUrl = linkedIn?.trim() ?? '';
+    if (linkedInUrl === '') {
+      return {};
+    }
+    return {
+      component: 'a' as const,
+      href: linkedInUrl,
+      target: '_blank' as const,
+      rel: 'noopener noreferrer',
+    };
+  };
+
   return (
     <Dialog
       open={open}
@@ -43,10 +58,7 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
           {teamMembers.map(member => (
             <ListItem
               key={member.name}
-              component='a'
-              href={member.linkedIn}
-              target='_blank'
-              rel='noopener noreferrer'
+              {...getLinkedInProps(member.linkedIn)}
               sx={{
                 border: '1px solid',
                 borderColor: 'divider',
@@ -77,7 +89,7 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
                 }
                 secondary={member.position}
               />
-              <LinkedInIcon color='primary' />
+              {member.linkedIn && <LinkedInIcon color='primary' />}
             </ListItem>
           ))}
         </List>

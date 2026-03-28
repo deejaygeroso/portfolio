@@ -1,47 +1,109 @@
 // Persons
-import albertGeislerFoxWebP from '@/assets/images/persons/albert-geisler-fox.webp';
-import ameerKhalaf600x600WebP from '@/assets/images/persons/ameer-khalaf-600x600.webp';
-import angelaWebP from '@/assets/images/persons/angela-doloricon.webp';
-import aryenWebP from '@/assets/images/persons/aryen-jim-bejagan.webp';
-import becPriceWebP from '@/assets/images/persons/bec-price.webp';
-import brianAlcuazWebP from '@/assets/images/persons/brian-alcuaz.webp';
-import junskiWebP from '@/assets/images/persons/casan-jr-mala.webp';
-import chrisWebP from '@/assets/images/persons/christopher-bradshaw.webp';
 import deejay960x960WebP from '@/assets/images/persons/deejay-geroso-960x960.webp';
 import deejayWebP from '@/assets/images/persons/deejay-geroso.webp';
-import denmark250x250WebP from '@/assets/images/persons/denmark-tabiolo-250x250.webp';
-import denmarkWebP from '@/assets/images/persons/denmark-tabiolo.webp';
-import donKennethDemayoWebP from '@/assets/images/persons/don-kenneth-demayo.webp';
-import dustin250x250WebP from '@/assets/images/persons/dustin-watkins-250x250.webp';
-import dustinWebP from '@/assets/images/persons/dustin-watkins.webp';
-import eskildBennedsenWebP from '@/assets/images/persons/eskild-bennedsen.webp';
-import faithHallWebP from '@/assets/images/persons/faith-hall.webp';
-import giovanniWebP from '@/assets/images/persons/giovanni-lobitos.webp';
-import hazelWebP from '@/assets/images/persons/hazel-ko-lumactod.webp';
-import jalilWebP from '@/assets/images/persons/jalil-laguindab.webp';
-import jasonWebP from '@/assets/images/persons/jason-abella.webp';
-import jdWebP from '@/assets/images/persons/jd.webp';
-import jeeAnnWebP from '@/assets/images/persons/jee-ann-rivera.webp';
-import erickWebP from '@/assets/images/persons/john-erick-madduma.webp';
-import jonCesarWebP from '@/assets/images/persons/jon-cesar-tagsip.webp';
-import justinWebP from '@/assets/images/persons/justin-behnke.webp';
-import katrinaLozadaWebP from '@/assets/images/persons/katrina-lozada.webp';
-import marcoPapsWebP from '@/assets/images/persons/marco-budiongan.webp';
-import markLalorWebP from '@/assets/images/persons/mark-lalor.webp';
-import markMarilagWebP from '@/assets/images/persons/mark-marilag.webp';
-import oliverDiamondWebP from '@/assets/images/persons/oliver-diamond.webp';
-import pavelSromWebP from '@/assets/images/persons/pavel-srom.webp';
-import peterBarryWebP from '@/assets/images/persons/peter-barry.webp';
-import portiaWebP from '@/assets/images/persons/portia-linao.webp';
-import richardWebP from '@/assets/images/persons/richard-paul-salem.webp';
-import papaRodsWebP from '@/assets/images/persons/roderick-gohetia.webp';
-import saraJavan250x250WebP from '@/assets/images/persons/sara-javan-250x250.webp';
-import saraJavanWebP from '@/assets/images/persons/sara-javan.webp';
-import sherylWebP from '@/assets/images/persons/sheryl-picante.webp';
-import sylviaEspina250x250WebP from '@/assets/images/persons/sylvia-espina-250x250.webp';
-import tinaRaftopoulos250x250WebP from '@/assets/images/persons/tina-raftopoulos-250x250.webp';
-import vanessa250x250WebP from '@/assets/images/persons/vanessa-faith-abordo-250x250.webp';
-import vanessaWebP from '@/assets/images/persons/vanessa-faith-abordo.webp';
+
+// adally
+import denmarkWebP from '@/assets/images/persons/adally/denmark-tabiolo.webp';
+
+// clinictocloud
+import becPriceWebP from '@/assets/images/persons/clinictocloud/bec-price.webp';
+import brianAlcuazWebP from '@/assets/images/persons/clinictocloud/brian-alcuaz.webp';
+import markLalorWebP from '@/assets/images/persons/clinictocloud/mark-lalor.webp';
+import saraJavanWebP from '@/assets/images/persons/clinictocloud/sara-javan.webp';
+
+// crypto
+import richardWebP from '@/assets/images/persons/crypto/richard-paul-salem.webp';
+
+// databased
+import chrisWebP from '@/assets/images/persons/databased/christopher-bradshaw.webp';
+import dustinWebP from '@/assets/images/persons/databased/dustin-watkins.webp';
+import justinWebP from '@/assets/images/persons/databased/justin-behnke.webp';
+
+// medirecords
+import achmadFajarRidwanWebP from '@/assets/images/persons/medirecords/achmad-fajar-ridwan.webp';
+import adamAfriansyahBrahmanaWebP from '@/assets/images/persons/medirecords/adam-afriansyah-brahmana.webp';
+import amanKaurWebp from '@/assets/images/persons/medirecords/aman-kaur.webp';
+import ameerKhalafMrWebP from '@/assets/images/persons/medirecords/ameer-khalaf.webp';
+import andhikaSatriaBagaskoroWebP from '@/assets/images/persons/medirecords/andhika-satria-bagaskoro.webp';
+import angelaGuardianWebP from '@/assets/images/persons/medirecords/angela-guardian.webp';
+import armandNunezWebP from '@/assets/images/persons/medirecords/armand-nunez.webp';
+import basilKaffiArRahmanWebP from '@/assets/images/persons/medirecords/basil-kaffi-ar-rahman.webp';
+import bayuAjiWicaksonojatiWebP from '@/assets/images/persons/medirecords/bayu-aji-wicaksonojati.webp';
+import becPriceMrWebP from '@/assets/images/persons/medirecords/bec-price-mr.webp';
+import chiaEnriquezWebP from '@/assets/images/persons/medirecords/chia-enriquez.webp';
+import chrisBrownWebP from '@/assets/images/persons/medirecords/chris-brown.webp';
+import chungMinWenWebP from '@/assets/images/persons/medirecords/chung-min-wen.webp';
+import cinyMaeChuaWebP from '@/assets/images/persons/medirecords/ciny-mae-chua.webp';
+import dannieDouongWebP from '@/assets/images/persons/medirecords/dannie-douong.webp';
+import erprilianoSaputraAbbasWebP from '@/assets/images/persons/medirecords/erpriliano-saputra-abbas.webp';
+import faridMahmudRohmatullaWebP from '@/assets/images/persons/medirecords/farid-mahmud-rohmatulla.webp';
+import feiTengWebP from '@/assets/images/persons/medirecords/fei-teng.webp';
+import jayneThompsonWebP from '@/assets/images/persons/medirecords/jayne-thompson.webp';
+import jedPatrickDatuWebP from '@/assets/images/persons/medirecords/jed-patrick-datu.webp';
+import jeremyYangWebP from '@/assets/images/persons/medirecords/Jeremy Yang.webp';
+import jervisTangoanWebP from '@/assets/images/persons/medirecords/jervis-tangoan.webp';
+import johnKarloBathanWebP from '@/assets/images/persons/medirecords/john-karlo-bathan.webp';
+import jovitaVeigasWebP from '@/assets/images/persons/medirecords/jovita-veigas.webp';
+import joyceGonzalezTorregosaWebP from '@/assets/images/persons/medirecords/joyce-gonzalez-torregosa.webp';
+import kevinPatrickDelenWebP from '@/assets/images/persons/medirecords/kevin-patrick-delen.webp';
+import khikkaWithnellWebP from '@/assets/images/persons/medirecords/khikka-withnell.webp';
+import lezlieVinuyaWebP from '@/assets/images/persons/medirecords/lezlie-vinuya.webp';
+import lorraineLiaoWebP from '@/assets/images/persons/medirecords/lorraine-liao.webp';
+import meganHarkerWebP from '@/assets/images/persons/medirecords/megan-harker.webp';
+import mickFaberWebP from '@/assets/images/persons/medirecords/mick-faber.webp';
+import myronLaoWebP from '@/assets/images/persons/medirecords/myron-lao.webp';
+import rexEstremeraWebP from '@/assets/images/persons/medirecords/rex-estremera.webp';
+import reynaldoNeryWebP from '@/assets/images/persons/medirecords/reynaldo-nery.webp';
+import roselynHipolitoWebP from '@/assets/images/persons/medirecords/roselyn-hipolito.webp';
+import sanjeedQuaiyumiWebP from '@/assets/images/persons/medirecords/sanjeed-quaiyumi.webp';
+import staffanFlodinWebP from '@/assets/images/persons/medirecords/staffan-flodin.webp';
+import teguhHariyadiWebP from '@/assets/images/persons/medirecords/teguh-hariyadi.webp';
+import tiffanieLeungWebP from '@/assets/images/persons/medirecords/tiffanie-leung.webp';
+import tinaRaftopoulosMrWebP from '@/assets/images/persons/medirecords/tina-raftopoulos.webp';
+import tracyCarmelResurreccionWebP from '@/assets/images/persons/medirecords/tracy-carmel-resurreccion.webp';
+import vladymerMendozaWebP from '@/assets/images/persons/medirecords/vladymer-mendoza.webp';
+import windaKristianaWebp from '@/assets/images/persons/medirecords/winda-kristiana.jpeg';
+import wisesaFentikaWebp from '@/assets/images/persons/medirecords/wisesa-fentika.webp';
+import yanSarantaWebp from '@/assets/images/persons/medirecords/yan-saranta.webp';
+
+// performativ
+import albertGeislerFoxWebP from '@/assets/images/persons/performativ/albert-geisler-fox.webp';
+import donKennethDemayoWebP from '@/assets/images/persons/performativ/don-kenneth-demayo.webp';
+import eskildBennedsenWebP from '@/assets/images/persons/performativ/eskild-bennedsen.webp';
+import jeeAnnWebP from '@/assets/images/persons/performativ/jee-ann-rivera.webp';
+import katrinaLozadaWebP from '@/assets/images/persons/performativ/katrina-lozada.webp';
+import markMarilagWebP from '@/assets/images/persons/performativ/mark-marilag.webp';
+import oliverDiamondWebP from '@/assets/images/persons/performativ/oliver-diamond.webp';
+import pavelSromWebP from '@/assets/images/persons/performativ/pavel-srom.webp';
+import peterBarryWebP from '@/assets/images/persons/performativ/peter-barry.webp';
+
+// snapzio
+import angelaWebP from '@/assets/images/persons/snapzio/angela-doloricon.webp';
+import aryenWebP from '@/assets/images/persons/snapzio/aryen-jim-bejagan.webp';
+import junskiWebP from '@/assets/images/persons/snapzio/casan-jr-mala.webp';
+import faithHallWebP from '@/assets/images/persons/snapzio/faith-hall.webp';
+import giovanniWebP from '@/assets/images/persons/snapzio/giovanni-lobitos.webp';
+import hazelWebP from '@/assets/images/persons/snapzio/hazel-ko-lumactod.webp';
+import jalilWebP from '@/assets/images/persons/snapzio/jalil-laguindab.webp';
+import jasonWebP from '@/assets/images/persons/snapzio/jason-abella.webp';
+import jdWebP from '@/assets/images/persons/snapzio/jd.webp';
+import erickWebP from '@/assets/images/persons/snapzio/john-erick-madduma.webp';
+import jonCesarWebP from '@/assets/images/persons/snapzio/jon-cesar-tagsip.webp';
+import marcoPapsWebP from '@/assets/images/persons/snapzio/marco-budiongan.webp';
+import portiaWebP from '@/assets/images/persons/snapzio/portia-linao.webp';
+import papaRodsWebP from '@/assets/images/persons/snapzio/roderick-gohetia.webp';
+import sherylWebP from '@/assets/images/persons/snapzio/sheryl-picante.webp';
+import vanessaWebP from '@/assets/images/persons/snapzio/vanessa-faith-abordo.webp';
+
+// Testimonials
+import ameerKhalaf600x600WebP from '@/assets/images/persons/testimonials/ameer-khalaf-600x600.webp';
+import denmark250x250WebP from '@/assets/images/persons/testimonials/denmark-tabiolo-250x250.webp';
+import dustin250x250WebP from '@/assets/images/persons/testimonials/dustin-watkins-250x250.webp';
+import saraJavan250x250WebP from '@/assets/images/persons/testimonials/sara-javan-250x250.webp';
+import sylviaEspina250x250WebP from '@/assets/images/persons/testimonials/sylvia-espina-250x250.webp';
+import tinaRaftopoulos250x250WebP from '@/assets/images/persons/testimonials/tina-raftopoulos-250x250.webp';
+import vanessa250x250WebP from '@/assets/images/persons/testimonials/vanessa-faith-abordo-250x250.webp';
+
 // Projects Images
 import adally1WebP from '@/assets/images/projects/adally/adally-1.webp';
 import adally2WebP from '@/assets/images/projects/adally/adally-2.webp';
@@ -52,64 +114,134 @@ import crypto1WebP from '@/assets/images/projects/crypto/volume_overview.webp';
 import databasedWebP from '@/assets/images/projects/databased/databased.webp';
 import dejablogWebP from '@/assets/images/projects/dejablog/dejablog.webp';
 import helpbertWebP from '@/assets/images/projects/helpbert/helpbert.webp';
+import medirecords1WebP from '@/assets/images/projects/medirecords/medirecords-1.webp';
+import medirecords2WebP from '@/assets/images/projects/medirecords/medirecords-2.webp';
+import medirecords3WebP from '@/assets/images/projects/medirecords/medirecords-3.webp';
 import meegleWebP from '@/assets/images/projects/meegle/meegle.webp';
 import monitoringWebP from '@/assets/images/projects/monitoring/monitoring.webp';
 import performativWebP from '@/assets/images/projects/performativ/performativ.webp';
 
 export {
-  albertGeislerFoxWebP,
-  adally1WebP,
-  adally2WebP,
-  angelaWebP,
-  ameerKhalaf600x600WebP,
-  aryenWebP,
-  becPriceWebP,
-  brianAlcuazWebP,
-  c2cToolbarWebP,
-  chrisWebP,
-  crypto1WebP,
-  crypto2WebP,
-  crypto3WebP,
+  // Persons
   deejayWebP,
   deejay960x960WebP,
+
+  // adally
   denmarkWebP,
-  denmark250x250WebP,
-  donKennethDemayoWebP,
+
+  // clinictocloud
+  becPriceWebP,
+  brianAlcuazWebP,
+  markLalorWebP,
+  saraJavanWebP,
+
+  // crypto
+  richardWebP,
+
+  // databased
+  chrisWebP,
   dustinWebP,
-  dustin250x250WebP,
-  databasedWebP,
-  dejablogWebP,
-  erickWebP,
+  justinWebP,
+
+  // medirecords
+  achmadFajarRidwanWebP,
+  adamAfriansyahBrahmanaWebP,
+  amanKaurWebp,
+  ameerKhalafMrWebP,
+  andhikaSatriaBagaskoroWebP,
+  angelaGuardianWebP,
+  armandNunezWebP,
+  basilKaffiArRahmanWebP,
+  bayuAjiWicaksonojatiWebP,
+  becPriceMrWebP,
+  chiaEnriquezWebP,
+  chrisBrownWebP,
+  chungMinWenWebP,
+  cinyMaeChuaWebP,
+  dannieDouongWebP,
+  erprilianoSaputraAbbasWebP,
+  faridMahmudRohmatullaWebP,
+  feiTengWebP,
+  jayneThompsonWebP,
+  jedPatrickDatuWebP,
+  jeremyYangWebP,
+  jervisTangoanWebP,
+  johnKarloBathanWebP,
+  jovitaVeigasWebP,
+  joyceGonzalezTorregosaWebP,
+  kevinPatrickDelenWebP,
+  khikkaWithnellWebP,
+  lezlieVinuyaWebP,
+  lorraineLiaoWebP,
+  meganHarkerWebP,
+  mickFaberWebP,
+  myronLaoWebP,
+  rexEstremeraWebP,
+  reynaldoNeryWebP,
+  roselynHipolitoWebP,
+  sanjeedQuaiyumiWebP,
+  staffanFlodinWebP,
+  teguhHariyadiWebP,
+  tiffanieLeungWebP,
+  tinaRaftopoulosMrWebP,
+  tracyCarmelResurreccionWebP,
+  vladymerMendozaWebP,
+  windaKristianaWebp,
+  wisesaFentikaWebp,
+  yanSarantaWebp,
+
+  // performativ
+  albertGeislerFoxWebP,
+  donKennethDemayoWebP,
   eskildBennedsenWebP,
+  jeeAnnWebP,
+  katrinaLozadaWebP,
+  markMarilagWebP,
+  oliverDiamondWebP,
+  pavelSromWebP,
+  peterBarryWebP,
+
+  // snapzio
+  angelaWebP,
+  aryenWebP,
+  erickWebP,
   faithHallWebP,
   giovanniWebP,
   hazelWebP,
-  helpbertWebP,
   jalilWebP,
   jasonWebP,
   jdWebP,
-  jeeAnnWebP,
   jonCesarWebP,
   junskiWebP,
-  justinWebP,
-  katrinaLozadaWebP,
   marcoPapsWebP,
-  markLalorWebP,
-  markMarilagWebP,
-  meegleWebP,
-  monitoringWebP,
-  oliverDiamondWebP,
   papaRodsWebP,
-  pavelSromWebP,
-  performativWebP,
-  peterBarryWebP,
   portiaWebP,
-  richardWebP,
-  saraJavanWebP,
-  saraJavan250x250WebP,
   sherylWebP,
+  vanessaWebP,
+
+  // Testimonials
+  ameerKhalaf600x600WebP,
+  denmark250x250WebP,
+  dustin250x250WebP,
+  saraJavan250x250WebP,
   sylviaEspina250x250WebP,
   tinaRaftopoulos250x250WebP,
-  vanessaWebP,
   vanessa250x250WebP,
+
+  // Projects Images
+  adally1WebP,
+  adally2WebP,
+  c2cToolbarWebP,
+  crypto1WebP,
+  crypto2WebP,
+  crypto3WebP,
+  databasedWebP,
+  dejablogWebP,
+  helpbertWebP,
+  medirecords1WebP,
+  medirecords2WebP,
+  medirecords3WebP,
+  meegleWebP,
+  monitoringWebP,
+  performativWebP,
 };

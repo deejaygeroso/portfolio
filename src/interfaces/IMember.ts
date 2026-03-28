@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
 
 interface IMember {
-  linkedIn: string;
+  linkedIn: string | null;
   name: string;
   photo: {
     jpg: StaticImageData | string | null;

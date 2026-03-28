@@ -1,5 +1,14 @@
 # portfolio
 
+## 3.0.0
+
+### Major Changes
+
+- Add Medirecords Project
+- Restructured assets directory
+- Refactor data directory
+- Team Members Linked in is now optional
+
 ## 2.4.0
 
 ### Minor Changes
