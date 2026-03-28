@@ -40,7 +40,10 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.14",
-      "@types/react-dom": "19.2.3"
+      "@types/react-dom": "19.2.3",
+      "flatted": "3.4.0",
+      "lodash-es": "4.17.23",
+      "minimatch": "9.0.7"
     }
   }
 }
