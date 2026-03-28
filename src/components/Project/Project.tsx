@@ -55,7 +55,7 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
         <CardHeader
           avatar={<Avatar>{project.name.charAt(0)}</Avatar>}
           action={
-            <IconButton>
+            <IconButton aria-label='More options'>
               <MoreVertIcon />
             </IconButton>
           }
@@ -103,6 +103,7 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
                       src={photo.webP}
                       alt={`${project.name} ${idx + 1}`}
                       fill
+                      sizes='(max-width: 600px) 100vw, (max-width: 960px) 80vw, 845px'
                       style={{ objectFit: 'contain' }}
                       onLoad={
                         idx === 0
@@ -130,6 +131,7 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
 
         <CardActions>
           <IconButton
+            aria-label='Open project website'
             onClick={() => window.open(project.domains[0]?.url, '_blank', 'noopener,noreferrer')}
             color='primary'>
             <OpenInNewIcon />
