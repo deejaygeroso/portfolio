@@ -4,7 +4,7 @@
 
 ### Minor Changes
 
-- Upgrade Packages
+- Upgrade Minor & Patch Version Package Dependencies
 
 ## 2.2.0
 
