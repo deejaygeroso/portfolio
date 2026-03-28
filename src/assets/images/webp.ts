@@ -52,6 +52,9 @@ import crypto1WebP from '@/assets/images/projects/crypto/volume_overview.webp';
 import databasedWebP from '@/assets/images/projects/databased/databased.webp';
 import dejablogWebP from '@/assets/images/projects/dejablog/dejablog.webp';
 import helpbertWebP from '@/assets/images/projects/helpbert/helpbert.webp';
+import medirecords1WebP from '@/assets/images/projects/medirecords/medirecords-1.webp';
+import medirecords2WebP from '@/assets/images/projects/medirecords/medirecords-2.webp';
+import medirecords3WebP from '@/assets/images/projects/medirecords/medirecords-3.webp';
 import meegleWebP from '@/assets/images/projects/meegle/meegle.webp';
 import monitoringWebP from '@/assets/images/projects/monitoring/monitoring.webp';
 import performativWebP from '@/assets/images/projects/performativ/performativ.webp';
@@ -96,6 +99,9 @@ export {
   marcoPapsWebP,
   markLalorWebP,
   markMarilagWebP,
+  medirecords1WebP,
+  medirecords2WebP,
+  medirecords3WebP,
   meegleWebP,
   monitoringWebP,
   oliverDiamondWebP,

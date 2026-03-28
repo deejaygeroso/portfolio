@@ -36,6 +36,9 @@ import {
   marcoPaps,
   markLalor,
   markMarilag,
+  medirecords1,
+  medirecords2,
+  medirecords3,
   meegle,
   monitoring,
   oliverDiamond,
@@ -85,6 +88,9 @@ import {
   marcoPapsWebP,
   markLalorWebP,
   markMarilagWebP,
+  medirecords1WebP,
+  medirecords2WebP,
+  medirecords3WebP,
   meegleWebP,
   monitoringWebP,
   oliverDiamondWebP,
@@ -239,8 +245,16 @@ const projects: IProject[] = [
     name: 'Medirecords',
     photos: [
       {
-        jpg: performativ,
-        webP: performativWebP,
+        jpg: medirecords1,
+        webP: medirecords1WebP,
+      },
+      {
+        jpg: medirecords2,
+        webP: medirecords2WebP,
+      },
+      {
+        jpg: medirecords3,
+        webP: medirecords3WebP,
       },
     ],
     position: 'Senior Front-end Developer (Core Architecture)',

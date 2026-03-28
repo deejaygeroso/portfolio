@@ -52,6 +52,9 @@ import crypto1 from '@/assets/images/projects/crypto/volume_overview.jpg';
 import databased from '@/assets/images/projects/databased/databased.jpg';
 import dejablog from '@/assets/images/projects/dejablog/dejablog.jpg';
 import helpbert from '@/assets/images/projects/helpbert/helpbert.jpg';
+import medirecords1 from '@/assets/images/projects/medirecords/medirecords-1.png';
+import medirecords2 from '@/assets/images/projects/medirecords/medirecords-2.png';
+import medirecords3 from '@/assets/images/projects/medirecords/medirecords-3.png';
 import meegle from '@/assets/images/projects/meegle/meegle.jpg';
 import monitoring from '@/assets/images/projects/monitoring/monitoring.jpg';
 import performativ from '@/assets/images/projects/performativ/performativ.png';
@@ -96,6 +99,9 @@ export {
   marcoPaps,
   markLalor,
   markMarilag,
+  medirecords1,
+  medirecords2,
+  medirecords3,
   meegle,
   monitoring,
   oliverDiamond,
