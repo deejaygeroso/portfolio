@@ -20,27 +20,50 @@ import dustin from '@/assets/images/persons/databased/dustin-watkins.jpg';
 import justin from '@/assets/images/persons/databased/justin-behnke.jpg';
 
 // medirecords
+import achmadFajarRidwan from '@/assets/images/persons/medirecords/achmad-fajar-ridwan.jpg';
 import adamAfriansyahBrahmana from '@/assets/images/persons/medirecords/adam-afriansyah-brahmana.jpeg';
 import ameerKhalafMr from '@/assets/images/persons/medirecords/ameer-khalaf.jpeg';
 import andhikaSatriaBagaskoro from '@/assets/images/persons/medirecords/andhika-satria-bagaskoro.jpeg';
+import angelaGuardian from '@/assets/images/persons/medirecords/angela-guardian.jpg';
+import armandNunez from '@/assets/images/persons/medirecords/armand-nunez.jpg';
+import basilKaffiArRahman from '@/assets/images/persons/medirecords/basil-kaffi-ar-rahman.jpg';
 import bayuAjiWicaksonojati from '@/assets/images/persons/medirecords/bayu-aji-wicaksonojati.jpeg';
 import becPriceMr from '@/assets/images/persons/medirecords/bec-price-mr.jpg';
 import chiaEnriquez from '@/assets/images/persons/medirecords/chia-enriquez.jpeg';
 import chrisBrown from '@/assets/images/persons/medirecords/chris-brown.jpg';
+import chungMinWen from '@/assets/images/persons/medirecords/chung-min-wen.jpg';
+import cinyMaeChua from '@/assets/images/persons/medirecords/ciny-mae-chua.jpg';
 import dannieDouong from '@/assets/images/persons/medirecords/dannie-douong.png';
+import erprilianoSaputraAbbas from '@/assets/images/persons/medirecords/erpriliano-saputra-abbas.jpg';
+import faridMahmudRohmatulla from '@/assets/images/persons/medirecords/farid-mahmud-rohmatulla.jpg';
 import feiTeng from '@/assets/images/persons/medirecords/fei-teng.jpeg';
 import jayneThompson from '@/assets/images/persons/medirecords/jayne-thompson.jpg';
+import jedPatrickDatu from '@/assets/images/persons/medirecords/jed-patrick-datu.jpg';
 import jeremyYang from '@/assets/images/persons/medirecords/Jeremy Yang.jpeg';
 import jervisTangoan from '@/assets/images/persons/medirecords/jervis-tangoan.jpeg';
 import johnKarloBathan from '@/assets/images/persons/medirecords/john-karlo-bathan.jpeg';
+import jovitaVeigas from '@/assets/images/persons/medirecords/jovita-veigas.jpg';
 import joyceGonzalezTorregosa from '@/assets/images/persons/medirecords/joyce-gonzalez-torregosa.jpeg';
 import kevinPatrickDelen from '@/assets/images/persons/medirecords/kevin-patrick-delen.jpeg';
 import khikkaWithnell from '@/assets/images/persons/medirecords/khikka-withnell.jpg';
 import lezlieVinuya from '@/assets/images/persons/medirecords/lezlie-vinuya.jpeg';
+import lorraineLiao from '@/assets/images/persons/medirecords/lorraine-liao.jpeg';
 import meganHarker from '@/assets/images/persons/medirecords/megan-harker.jpeg';
 import mickFaber from '@/assets/images/persons/medirecords/mick-faber.png';
+import myronLao from '@/assets/images/persons/medirecords/myron-lao.jpg';
+import rexEstremera from '@/assets/images/persons/medirecords/rex-estremera.jpg';
 import reynaldoNery from '@/assets/images/persons/medirecords/reynaldo-nery.jpeg';
 import roselynHipolito from '@/assets/images/persons/medirecords/roselyn-hipolito.jpeg';
+import sanjeedQuaiyumi from '@/assets/images/persons/medirecords/sanjeed-quaiyumi.jpg';
+import staffanFlodin from '@/assets/images/persons/medirecords/staffan-flodin.jpg';
+import teguhHariyadi from '@/assets/images/persons/medirecords/teguh-hariyadi.jpg';
+import tiffanieLeung from '@/assets/images/persons/medirecords/tiffanie-leung.jpg';
+import tinaRaftopoulosMr from '@/assets/images/persons/medirecords/tina-raftopoulos.jpg';
+import tracyCarmelResurreccion from '@/assets/images/persons/medirecords/tracy-carmel-resurreccion.jpg';
+import vladymerMendoza from '@/assets/images/persons/medirecords/vladymer-mendoza.jpg';
+import windaKristiana from '@/assets/images/persons/medirecords/winda-kristiana.jpeg';
+import wisesaFentika from '@/assets/images/persons/medirecords/wisesa-fentika.jpeg';
+import yanSaranta from '@/assets/images/persons/medirecords/yan-saranta.jpeg';
 
 // performativ
 import albertGeislerFox from '@/assets/images/persons/performativ/albert-geisler-fox.jpeg';
@@ -120,27 +143,50 @@ export {
   justin,
 
   // medirecords
+  achmadFajarRidwan,
   adamAfriansyahBrahmana,
   ameerKhalafMr,
   andhikaSatriaBagaskoro,
+  angelaGuardian,
+  armandNunez,
+  basilKaffiArRahman,
   bayuAjiWicaksonojati,
   becPriceMr,
   chiaEnriquez,
   chrisBrown,
+  chungMinWen,
+  cinyMaeChua,
   dannieDouong,
+  erprilianoSaputraAbbas,
+  faridMahmudRohmatulla,
   feiTeng,
   jayneThompson,
+  jedPatrickDatu,
   jeremyYang,
   jervisTangoan,
   johnKarloBathan,
+  jovitaVeigas,
   joyceGonzalezTorregosa,
   kevinPatrickDelen,
   khikkaWithnell,
   lezlieVinuya,
+  lorraineLiao,
   meganHarker,
   mickFaber,
+  myronLao,
+  rexEstremera,
   reynaldoNery,
   roselynHipolito,
+  sanjeedQuaiyumi,
+  staffanFlodin,
+  teguhHariyadi,
+  tiffanieLeung,
+  tinaRaftopoulosMr,
+  tracyCarmelResurreccion,
+  vladymerMendoza,
+  windaKristiana,
+  wisesaFentika,
+  yanSaranta,
 
   // performativ
   albertGeislerFox,

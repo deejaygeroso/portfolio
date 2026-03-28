@@ -20,27 +20,47 @@ import dustinWebP from '@/assets/images/persons/databased/dustin-watkins.webp';
 import justinWebP from '@/assets/images/persons/databased/justin-behnke.webp';
 
 // medirecords
+import achmadFajarRidwanWebP from '@/assets/images/persons/medirecords/achmad-fajar-ridwan.webp';
 import adamAfriansyahBrahmanaWebP from '@/assets/images/persons/medirecords/adam-afriansyah-brahmana.webp';
 import ameerKhalafMrWebP from '@/assets/images/persons/medirecords/ameer-khalaf.webp';
 import andhikaSatriaBagaskoroWebP from '@/assets/images/persons/medirecords/andhika-satria-bagaskoro.webp';
+import angelaGuardianWebP from '@/assets/images/persons/medirecords/angela-guardian.webp';
+import armandNunezWebP from '@/assets/images/persons/medirecords/armand-nunez.webp';
+import basilKaffiArRahmanWebP from '@/assets/images/persons/medirecords/basil-kaffi-ar-rahman.webp';
 import bayuAjiWicaksonojatiWebP from '@/assets/images/persons/medirecords/bayu-aji-wicaksonojati.webp';
 import becPriceMrWebP from '@/assets/images/persons/medirecords/bec-price-mr.webp';
 import chiaEnriquezWebP from '@/assets/images/persons/medirecords/chia-enriquez.webp';
 import chrisBrownWebP from '@/assets/images/persons/medirecords/chris-brown.webp';
+import chungMinWenWebP from '@/assets/images/persons/medirecords/chung-min-wen.webp';
+import cinyMaeChuaWebP from '@/assets/images/persons/medirecords/ciny-mae-chua.webp';
 import dannieDouongWebP from '@/assets/images/persons/medirecords/dannie-douong.webp';
+import erprilianoSaputraAbbasWebP from '@/assets/images/persons/medirecords/erpriliano-saputra-abbas.webp';
+import faridMahmudRohmatullaWebP from '@/assets/images/persons/medirecords/farid-mahmud-rohmatulla.webp';
 import feiTengWebP from '@/assets/images/persons/medirecords/fei-teng.webp';
 import jayneThompsonWebP from '@/assets/images/persons/medirecords/jayne-thompson.webp';
+import jedPatrickDatuWebP from '@/assets/images/persons/medirecords/jed-patrick-datu.webp';
 import jeremyYangWebP from '@/assets/images/persons/medirecords/Jeremy Yang.webp';
 import jervisTangoanWebP from '@/assets/images/persons/medirecords/jervis-tangoan.webp';
 import johnKarloBathanWebP from '@/assets/images/persons/medirecords/john-karlo-bathan.webp';
+import jovitaVeigasWebP from '@/assets/images/persons/medirecords/jovita-veigas.webp';
 import joyceGonzalezTorregosaWebP from '@/assets/images/persons/medirecords/joyce-gonzalez-torregosa.webp';
 import kevinPatrickDelenWebP from '@/assets/images/persons/medirecords/kevin-patrick-delen.webp';
 import khikkaWithnellWebP from '@/assets/images/persons/medirecords/khikka-withnell.webp';
 import lezlieVinuyaWebP from '@/assets/images/persons/medirecords/lezlie-vinuya.webp';
+import lorraineLiaoWebP from '@/assets/images/persons/medirecords/lorraine-liao.webp';
 import meganHarkerWebP from '@/assets/images/persons/medirecords/megan-harker.webp';
 import mickFaberWebP from '@/assets/images/persons/medirecords/mick-faber.webp';
+import myronLaoWebP from '@/assets/images/persons/medirecords/myron-lao.webp';
+import rexEstremeraWebP from '@/assets/images/persons/medirecords/rex-estremera.webp';
 import reynaldoNeryWebP from '@/assets/images/persons/medirecords/reynaldo-nery.webp';
 import roselynHipolitoWebP from '@/assets/images/persons/medirecords/roselyn-hipolito.webp';
+import sanjeedQuaiyumiWebP from '@/assets/images/persons/medirecords/sanjeed-quaiyumi.webp';
+import staffanFlodinWebP from '@/assets/images/persons/medirecords/staffan-flodin.webp';
+import teguhHariyadiWebP from '@/assets/images/persons/medirecords/teguh-hariyadi.webp';
+import tiffanieLeungWebP from '@/assets/images/persons/medirecords/tiffanie-leung.webp';
+import tinaRaftopoulosMrWebP from '@/assets/images/persons/medirecords/tina-raftopoulos.webp';
+import tracyCarmelResurreccionWebP from '@/assets/images/persons/medirecords/tracy-carmel-resurreccion.webp';
+import vladymerMendozaWebP from '@/assets/images/persons/medirecords/vladymer-mendoza.webp';
 
 // performativ
 import albertGeislerFoxWebP from '@/assets/images/persons/performativ/albert-geisler-fox.webp';
@@ -120,27 +140,47 @@ export {
   justinWebP,
 
   // medirecords
+  achmadFajarRidwanWebP,
   adamAfriansyahBrahmanaWebP,
   ameerKhalafMrWebP,
   andhikaSatriaBagaskoroWebP,
+  angelaGuardianWebP,
+  armandNunezWebP,
+  basilKaffiArRahmanWebP,
   bayuAjiWicaksonojatiWebP,
   becPriceMrWebP,
   chiaEnriquezWebP,
   chrisBrownWebP,
+  chungMinWenWebP,
+  cinyMaeChuaWebP,
   dannieDouongWebP,
+  erprilianoSaputraAbbasWebP,
+  faridMahmudRohmatullaWebP,
   feiTengWebP,
   jayneThompsonWebP,
+  jedPatrickDatuWebP,
   jeremyYangWebP,
   jervisTangoanWebP,
   johnKarloBathanWebP,
+  jovitaVeigasWebP,
   joyceGonzalezTorregosaWebP,
   kevinPatrickDelenWebP,
   khikkaWithnellWebP,
   lezlieVinuyaWebP,
+  lorraineLiaoWebP,
   meganHarkerWebP,
   mickFaberWebP,
+  myronLaoWebP,
+  rexEstremeraWebP,
   reynaldoNeryWebP,
   roselynHipolitoWebP,
+  sanjeedQuaiyumiWebP,
+  staffanFlodinWebP,
+  teguhHariyadiWebP,
+  tiffanieLeungWebP,
+  tinaRaftopoulosMrWebP,
+  tracyCarmelResurreccionWebP,
+  vladymerMendozaWebP,
 
   // performativ
   albertGeislerFoxWebP,
