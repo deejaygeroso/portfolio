@@ -7,7 +7,7 @@ import becPrice from '@/assets/images/persons/bec-price.jpg';
 import brianAlcuaz from '@/assets/images/persons/brian-alcuaz.jpg';
 import junski from '@/assets/images/persons/casan-jr-mala.jpg';
 import chris from '@/assets/images/persons/christopher-bradshaw.jpg';
-import deejay250x250 from '@/assets/images/persons/deejay-geroso-250x250.jpg';
+import deejay960x960 from '@/assets/images/persons/deejay-geroso-960x960.jpg';
 import deejay from '@/assets/images/persons/deejay-geroso.jpg';
 import denmark250x250 from '@/assets/images/persons/denmark-tabiolo-250x250.jpg';
 import denmark from '@/assets/images/persons/denmark-tabiolo.jpg';
@@ -71,7 +71,7 @@ export {
   crypto2,
   crypto3,
   deejay,
-  deejay250x250,
+  deejay960x960,
   denmark,
   denmark250x250,
   donKennethDemayo,

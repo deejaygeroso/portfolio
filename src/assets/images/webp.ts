@@ -7,7 +7,7 @@ import becPriceWebP from '@/assets/images/persons/bec-price.webp';
 import brianAlcuazWebP from '@/assets/images/persons/brian-alcuaz.webp';
 import junskiWebP from '@/assets/images/persons/casan-jr-mala.webp';
 import chrisWebP from '@/assets/images/persons/christopher-bradshaw.webp';
-import deejay250x250WebP from '@/assets/images/persons/deejay-geroso-250x250.webp';
+import deejay960x960WebP from '@/assets/images/persons/deejay-geroso-960x960.webp';
 import deejayWebP from '@/assets/images/persons/deejay-geroso.webp';
 import denmark250x250WebP from '@/assets/images/persons/denmark-tabiolo-250x250.webp';
 import denmarkWebP from '@/assets/images/persons/denmark-tabiolo.webp';
@@ -71,7 +71,7 @@ export {
   crypto2WebP,
   crypto3WebP,
   deejayWebP,
-  deejay250x250WebP,
+  deejay960x960WebP,
   denmarkWebP,
   denmark250x250WebP,
   donKennethDemayoWebP,
