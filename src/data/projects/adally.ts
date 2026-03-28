@@ -17,7 +17,7 @@ const adally = {
   members: [
     setMemberPosition(personDeejayGeroso, 'Tech Lead & System Architect'),
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Micah Uyeharam',
       photo: {
         jpg: null,

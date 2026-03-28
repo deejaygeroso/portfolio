@@ -198,7 +198,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Maya Muharini',
       photo: {
         jpg: null,
@@ -225,7 +225,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Meta Oktaorora',
       photo: {
         jpg: null,
@@ -261,7 +261,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Leon Li',
       photo: {
         jpg: null,
@@ -270,7 +270,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Sean Henura',
       photo: {
         jpg: null,
@@ -279,7 +279,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Yasheng Hu',
       photo: {
         jpg: null,
@@ -342,7 +342,7 @@ const medirecords = {
       position: 'Designer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Martin Ivan Pendel',
       photo: {
         jpg: null,
@@ -450,7 +450,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Farid Mahmud Rohmatullah',
       photo: {
         jpg: null,
@@ -459,7 +459,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Erpriiano Saputra Abbas',
       photo: {
         jpg: null,
@@ -468,7 +468,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Bagus Wahyudi',
       photo: {
         jpg: null,
@@ -477,7 +477,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Muhamad Rizal',
       photo: {
         jpg: null,
@@ -504,7 +504,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Apriliana Nurrahmawati',
       photo: {
         jpg: null,
@@ -522,7 +522,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Karl Stephene Castro Bernardo',
       photo: {
         jpg: null,
@@ -531,7 +531,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Wisesa Fentika',
       photo: {
         jpg: null,
@@ -549,7 +549,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Rex Estremera',
       photo: {
         jpg: null,
@@ -558,7 +558,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Vladymer Mendoza',
       photo: {
         jpg: null,
@@ -567,7 +567,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Kornel Wiranata',
       photo: {
         jpg: null,

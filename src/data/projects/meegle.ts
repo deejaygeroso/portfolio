@@ -111,7 +111,7 @@ const meegleProject = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: null,
       name: 'Hazel Ko Lumactod',
       photo: {
         jpg: hazel,
