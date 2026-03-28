@@ -179,6 +179,420 @@ const medirecords = {
       },
       position: 'Product Owner',
     },
+    {
+      linkedIn: '',
+      name: 'Jovita Veigas',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Lezlie Vinuya',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Maya Muharini',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Chia Enriquez',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Cindy Mae Chua',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Meta Oktaorora',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Roselyn Hipolito',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Business Analyst',
+    },
+    {
+      linkedIn: '',
+      name: 'Shawn Michael Lamod',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Myron Lao',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Leon Li',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Sean Henura',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Yasheng Hu',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Tommy Herianto',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Chung Min Wen',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Dannie Duong',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Lead Designer',
+    },
+    {
+      linkedIn: '',
+      name: 'Lorraine Liao',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Designer',
+    },
+    {
+      linkedIn: '',
+      name: 'Tiffanie Leung',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Designer',
+    },
+    {
+      linkedIn: '',
+      name: 'Joyce Gonzalez Torregosa',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Designer',
+    },
+    {
+      linkedIn: '',
+      name: 'Martin Ivan Pendel',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'QA Team Lead',
+    },
+    {
+      linkedIn: '',
+      name: 'Andhika Satria Bagaskoro',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Armand Nunez',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Teguh Hariyadi',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Bayu Aji Wicaksonojati',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Kevin Patrick Delen',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Jervis Tangoan',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Winda Kristiana',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Naldo Sutandar',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Quality Assurance',
+    },
+    {
+      linkedIn: '',
+      name: 'Angela Guardian',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Basil Kaffi Ar Rahman',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Adam Afriansyah Brahmana',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Farid Mahmud Rohmatullah',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Erpriiano Saputra Abbas',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Bagus Wahyudi',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Muhamad Rizal',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Yan Saranta',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Yossi Widyanto',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Apriliana Nurrahmawati',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'John Karlo Bathan',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Karl Stephene Castro Bernardo',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Wisesa Fentika',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Tracy Carmel Resurreccion',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Rex Estremera',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Vladymer Mendoza',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Kornel Wiranata',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Jed Patrick Datu',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
+    {
+      linkedIn: '',
+      name: 'Rohan Bhat',
+      photo: {
+        jpg: null,
+        webP: null,
+      },
+      position: 'Software Developer',
+    },
   ],
   name: 'Medirecords',
   photos: [
