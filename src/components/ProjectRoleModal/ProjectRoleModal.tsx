@@ -1,10 +1,11 @@
 import { JSX } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
-import EngineeringIcon from '@mui/icons-material/Engineering';
-import { Box, Chip, Dialog, DialogContent, DialogTitle, IconButton, Typography } from '@mui/material';
+import { Avatar, Box, Chip, Dialog, DialogContent, DialogTitle, IconButton, Typography } from '@mui/material';
 
 import { ProjectRoleModalProps } from './types';
+import Image from 'next/image';
+import { deejayWebP } from '@/assets/images/webp';
 
 export default function ProjectRoleModal({ open, onClose, project }: Readonly<ProjectRoleModalProps>): JSX.Element {
   return (
@@ -21,7 +22,15 @@ export default function ProjectRoleModal({ open, onClose, project }: Readonly<Pr
             alignItems: 'center',
             gap: 2,
           }}>
-          <EngineeringIcon fontSize='large' />
+          <Avatar sx={{ width: 50, height: 50 }}>
+            <Image
+              src={deejayWebP}
+              alt="Deejay Geroso"
+              width={50}
+              height={50}
+              style={{ borderRadius: '50%' }}
+            />
+          </Avatar>
           <Box>
             <Typography>{project.position}</Typography>
             <Typography
