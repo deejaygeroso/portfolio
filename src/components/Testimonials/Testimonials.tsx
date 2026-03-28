@@ -94,6 +94,7 @@ export default function TestimonialList(): JSX.Element {
 
                   <Typography
                     variant='subtitle1'
+                    component='h3'
                     fontWeight='bold'
                     sx={{
                       fontSize: {
@@ -119,7 +120,7 @@ export default function TestimonialList(): JSX.Element {
                 </Typography>
                 <Typography
                   variant='caption'
-                  color='text.disabled'
+                  color='text.secondary'
                   display='block'
                   mb={1}>
                   {t.date}

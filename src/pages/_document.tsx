@@ -14,7 +14,12 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head></Head>
+        <Head>
+          <meta
+            name='description'
+            content='Frontend Tech Lead specializing in design systems & performance engineering. Remote-first leader with proven track record shipping products at scale.'
+          />
+        </Head>
         <body>
           <GlobalStyles
             styles={{

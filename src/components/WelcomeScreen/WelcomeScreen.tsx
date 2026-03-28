@@ -71,6 +71,7 @@ export default function WelcomeScreen(): JSX.Element {
             id='profile-picture'
             src={deejay960x960WebP}
             priority
+            fetchPriority='high'
           />
           <Typography
             id='title1'
