@@ -37,6 +37,19 @@
     "prettier": "^3.8.1",
     "typescript": "^5.9.3"
   },
+  "browserslist": {
+    "production": [
+      "chrome >= 93",
+      "firefox >= 92",
+      "safari >= 15.4",
+      "edge >= 93"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.14",
