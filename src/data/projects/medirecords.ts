@@ -180,7 +180,7 @@ const medirecords = {
       position: 'Product Owner',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://au.linkedin.com/in/jovita-veigas-229b66108',
       name: 'Jovita Veigas',
       photo: {
         jpg: null,
@@ -189,7 +189,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/lezlie-anne-vinuya',
       name: 'Lezlie Vinuya',
       photo: {
         jpg: null,
@@ -207,7 +207,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://www.linkedin.com/in/chia-kimberly-enriquez-533582110',
       name: 'Chia Enriquez',
       photo: {
         jpg: null,
@@ -216,7 +216,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/cindymaechua',
       name: 'Cindy Mae Chua',
       photo: {
         jpg: null,
@@ -234,7 +234,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/roselyn-lubang-hipolito',
       name: 'Roselyn Hipolito',
       photo: {
         jpg: null,
@@ -243,7 +243,7 @@ const medirecords = {
       position: 'Business Analyst',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://www.linkedin.com/in/smlamod',
       name: 'Shawn Michael Lamod',
       photo: {
         jpg: null,
@@ -252,7 +252,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/myron-lao-00b38a66',
       name: 'Myron Lao',
       photo: {
         jpg: null,
@@ -288,7 +288,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://au.linkedin.com/in/tommy-heriyanto-82853079',
       name: 'Tommy Herianto',
       photo: {
         jpg: null,
@@ -297,7 +297,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://au.linkedin.com/in/chung-min-wen',
       name: 'Chung Min Wen',
       photo: {
         jpg: null,
@@ -306,7 +306,7 @@ const medirecords = {
       position: 'Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://au.linkedin.com/in/dannieduong',
       name: 'Dannie Duong',
       photo: {
         jpg: null,
@@ -315,7 +315,7 @@ const medirecords = {
       position: 'Lead Designer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://www.linkedin.com/in/raineliao',
       name: 'Lorraine Liao',
       photo: {
         jpg: null,
@@ -324,7 +324,7 @@ const medirecords = {
       position: 'Designer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://au.linkedin.com/in/tiffanie-leung',
       name: 'Tiffanie Leung',
       photo: {
         jpg: null,
@@ -333,7 +333,7 @@ const medirecords = {
       position: 'Designer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://www.linkedin.com/in/joycetorregosa',
       name: 'Joyce Gonzalez Torregosa',
       photo: {
         jpg: null,
@@ -351,7 +351,7 @@ const medirecords = {
       position: 'QA Team Lead',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/andhika-satria-a29694103',
       name: 'Andhika Satria Bagaskoro',
       photo: {
         jpg: null,
@@ -360,7 +360,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/armand-nunez-a5b23bb9',
       name: 'Armand Nunez',
       photo: {
         jpg: null,
@@ -369,7 +369,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://www.linkedin.com/in/teguh-hariyadi-4414b9156',
       name: 'Teguh Hariyadi',
       photo: {
         jpg: null,
@@ -378,7 +378,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/bayu-aji-wicaksonojati-880a3812a',
       name: 'Bayu Aji Wicaksonojati',
       photo: {
         jpg: null,
@@ -387,7 +387,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/kevin-patrick-delen-923209110',
       name: 'Kevin Patrick Delen',
       photo: {
         jpg: null,
@@ -396,7 +396,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/jervis-tangoan-189052166',
       name: 'Jervis Tangoan',
       photo: {
         jpg: null,
@@ -405,7 +405,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/winda-kristiana-4344aa38',
       name: 'Winda Kristiana',
       photo: {
         jpg: null,
@@ -414,7 +414,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/naldo-sutandar',
       name: 'Naldo Sutandar',
       photo: {
         jpg: null,
@@ -423,7 +423,7 @@ const medirecords = {
       position: 'Quality Assurance',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/angelaguardian',
       name: 'Angela Guardian',
       photo: {
         jpg: null,
@@ -432,7 +432,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/basil-ar-rahman-362325192/en',
       name: 'Basil Kaffi Ar Rahman',
       photo: {
         jpg: null,
@@ -441,7 +441,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/adam-afriansyah-brahmana-a60a74174',
       name: 'Adam Afriansyah Brahmana',
       photo: {
         jpg: null,
@@ -486,7 +486,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/yan-mahdi-saranta',
       name: 'Yan Saranta',
       photo: {
         jpg: null,
@@ -495,7 +495,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://id.linkedin.com/in/yossi-widyanto-a28025386',
       name: 'Yossi Widyanto',
       photo: {
         jpg: null,
@@ -513,7 +513,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/karlo-bathan',
       name: 'John Karlo Bathan',
       photo: {
         jpg: null,
@@ -540,7 +540,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/tracy-resurreccion',
       name: 'Tracy Carmel Resurreccion',
       photo: {
         jpg: null,
@@ -576,7 +576,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://ph.linkedin.com/in/jedpatrickdatu',
       name: 'Jed Patrick Datu',
       photo: {
         jpg: null,
@@ -585,7 +585,7 @@ const medirecords = {
       position: 'Software Developer',
     },
     {
-      linkedIn: '',
+      linkedIn: 'https://au.linkedin.com/in/rohan-bhat-8ab012160',
       name: 'Rohan Bhat',
       photo: {
         jpg: null,
