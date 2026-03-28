@@ -22,6 +22,7 @@ import justin from '@/assets/images/persons/databased/justin-behnke.jpg';
 // medirecords
 import achmadFajarRidwan from '@/assets/images/persons/medirecords/achmad-fajar-ridwan.jpg';
 import adamAfriansyahBrahmana from '@/assets/images/persons/medirecords/adam-afriansyah-brahmana.jpeg';
+import amanKaur from '@/assets/images/persons/medirecords/aman-kaur.jpg';
 import ameerKhalafMr from '@/assets/images/persons/medirecords/ameer-khalaf.jpeg';
 import andhikaSatriaBagaskoro from '@/assets/images/persons/medirecords/andhika-satria-bagaskoro.jpeg';
 import angelaGuardian from '@/assets/images/persons/medirecords/angela-guardian.jpg';
@@ -145,6 +146,7 @@ export {
   // medirecords
   achmadFajarRidwan,
   adamAfriansyahBrahmana,
+  amanKaur,
   ameerKhalafMr,
   andhikaSatriaBagaskoro,
   angelaGuardian,

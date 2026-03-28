@@ -22,6 +22,7 @@ import justinWebP from '@/assets/images/persons/databased/justin-behnke.webp';
 // medirecords
 import achmadFajarRidwanWebP from '@/assets/images/persons/medirecords/achmad-fajar-ridwan.webp';
 import adamAfriansyahBrahmanaWebP from '@/assets/images/persons/medirecords/adam-afriansyah-brahmana.webp';
+import amanKaurWebp from '@/assets/images/persons/medirecords/aman-kaur.webp';
 import ameerKhalafMrWebP from '@/assets/images/persons/medirecords/ameer-khalaf.webp';
 import andhikaSatriaBagaskoroWebP from '@/assets/images/persons/medirecords/andhika-satria-bagaskoro.webp';
 import angelaGuardianWebP from '@/assets/images/persons/medirecords/angela-guardian.webp';
@@ -61,6 +62,9 @@ import tiffanieLeungWebP from '@/assets/images/persons/medirecords/tiffanie-leun
 import tinaRaftopoulosMrWebP from '@/assets/images/persons/medirecords/tina-raftopoulos.webp';
 import tracyCarmelResurreccionWebP from '@/assets/images/persons/medirecords/tracy-carmel-resurreccion.webp';
 import vladymerMendozaWebP from '@/assets/images/persons/medirecords/vladymer-mendoza.webp';
+import windaKristianaWebp from '@/assets/images/persons/medirecords/winda-kristiana.jpeg';
+import wisesaFentikaWebp from '@/assets/images/persons/medirecords/wisesa-fentika.webp';
+import yanSarantaWebp from '@/assets/images/persons/medirecords/yan-saranta.webp';
 
 // performativ
 import albertGeislerFoxWebP from '@/assets/images/persons/performativ/albert-geisler-fox.webp';
@@ -142,6 +146,7 @@ export {
   // medirecords
   achmadFajarRidwanWebP,
   adamAfriansyahBrahmanaWebP,
+  amanKaurWebp,
   ameerKhalafMrWebP,
   andhikaSatriaBagaskoroWebP,
   angelaGuardianWebP,
@@ -181,6 +186,9 @@ export {
   tinaRaftopoulosMrWebP,
   tracyCarmelResurreccionWebP,
   vladymerMendozaWebP,
+  windaKristianaWebp,
+  wisesaFentikaWebp,
+  yanSarantaWebp,
 
   // performativ
   albertGeislerFoxWebP,
