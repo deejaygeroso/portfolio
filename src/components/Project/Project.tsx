@@ -21,12 +21,12 @@ import {
 
 import ProjectRoleModal from '@/components/ProjectRoleModal';
 import TeamMembersModal from '@/components/TeamMembersModal';
+import { IProject } from '@/interfaces';
 
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { ProjectProps } from './types';
-import { IProject } from '@/interfaces';
 
 export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.Element {
   const photos = project.photos ?? [];
@@ -41,8 +41,13 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
       return project.position;
     }
 
-    return `${project.position} (${project.date})`; 
-  }
+    return `${project.position} (${project.date})`;
+  };
+
+  const getPhotoSrc = (photo: IProject['photos'][number]): string => {
+    const src = photo.webP;
+    return typeof src === 'string' ? src : src.src;
+  };
 
   return (
     <Container sx={{ py: { xs: 1, sm: 2, md: 6 } }}>
@@ -92,7 +97,7 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
               pagination={{ clickable: true }}
               style={{ width: '100%', height: '100%' }}>
               {photos.map((photo, idx) => (
-                <SwiperSlide key={photo.webP as string}>
+                <SwiperSlide key={getPhotoSrc(photo)}>
                   <Box sx={{ width: '100%', height: '100%', position: 'relative' }}>
                     <Image
                       src={photo.webP}
