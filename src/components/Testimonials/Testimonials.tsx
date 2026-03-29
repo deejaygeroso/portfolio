@@ -46,6 +46,7 @@ export default function TestimonialList(): JSX.Element {
                 display: 'flex',
                 flexDirection: { xs: 'column', sm: 'row' },
                 gap: 2,
+                mb: { xs: 1, m: 5 },
               }}>
               {/* Left: Profile (hidden on mobile) */}
               {!isMobile && (
