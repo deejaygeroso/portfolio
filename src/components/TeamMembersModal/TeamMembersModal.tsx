@@ -52,7 +52,8 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
         sx={{
           m: 0,
           p: 2,
-          borderBottom: '1px solid #e0e0e0',
+          borderBottom: '1px solid',
+          borderColor: 'divider',
         }}>
         Our Team
         <IconButton
@@ -67,7 +68,7 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
         </IconButton>
       </DialogTitle>
 
-      <DialogContent>
+      <DialogContent sx={{ p: 0, m: 0 }}>
         <Box sx={{ px: 2, pb: 2, mt: 1 }}>
           <List>
             {teamMembers.map(member => (
@@ -111,7 +112,11 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
         </Box>
       </DialogContent>
       {isMobile && (
-        <DialogActions sx={{ borderTop: '1px solid #e0e0e0' }}>
+        <DialogActions
+          sx={{
+            borderTop: '1px solid',
+            borderColor: 'divider',
+          }}>
           <Button
             onClick={onClose}
             variant='contained'
