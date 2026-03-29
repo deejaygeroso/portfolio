@@ -50,7 +50,7 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
   };
 
   return (
-    <Container sx={{ py: { xs: 1, sm: 2, md: 6 } }}>
+    <Container sx={{ py: { xs: 1, sm: 2, md: 2 } }}>
       <Card sx={{ width: '100%', maxWidth: 845, mx: 'auto' }}>
         <CardHeader
           avatar={<Avatar>{project.name.charAt(0)}</Avatar>}
