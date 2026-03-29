@@ -1,21 +1,46 @@
+'use client';
+
+import { useMemo } from 'react';
+
 import type { AppProps } from 'next/app';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider as NextThemesProvider, useTheme as useNextTheme } from 'next-themes';
 
-import theme from '@/styles/theme';
+import { THEME_KEYS, themeMap } from '@/styles/themeMap';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+function MuiThemeWrapper({ children }: { children: React.ReactNode }) {
+  const { resolvedTheme } = useNextTheme();
+
+  const muiTheme = useMemo(() => {
+    const key = THEME_KEYS.find(k => k === resolvedTheme) ?? 'light';
+    return themeMap[key];
+  }, [resolvedTheme]);
+
+  return (
+    <ThemeProvider theme={muiTheme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
+  );
+}
+
 export default function MyApp(props: Readonly<AppProps>) {
   const { Component, pageProps } = props;
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <NextThemesProvider
+      themes={[...THEME_KEYS]}
+      defaultTheme='light'
+      attribute='data-theme'>
+      <MuiThemeWrapper>
+        <Component {...pageProps} />
+      </MuiThemeWrapper>
+    </NextThemesProvider>
   );
 }
