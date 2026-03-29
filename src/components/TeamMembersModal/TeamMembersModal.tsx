@@ -67,7 +67,7 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
       </DialogTitle>
 
       <DialogContent>
-        <Box sx={{ px: 2, pb: 2 }}>
+        <Box sx={{ px: 2, pb: 2, mt: 1 }}>
           <List>
             {teamMembers.map(member => (
               <ListItem
