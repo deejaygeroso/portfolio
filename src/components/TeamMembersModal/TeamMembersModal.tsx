@@ -5,7 +5,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
   Avatar,
   Box,
+  Button,
   Dialog,
+  DialogActions,
+  DialogContent,
   DialogTitle,
   IconButton,
   List,
@@ -13,6 +16,8 @@ import {
   ListItemAvatar,
   ListItemText,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material';
 
 import { IMember } from '@/interfaces';
@@ -20,6 +25,9 @@ import { IMember } from '@/interfaces';
 import { TeamMembersModalProps } from './types';
 
 export default function TeamMembersModal({ open, onClose, teamMembers }: Readonly<TeamMembersModalProps>): JSX.Element {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   const getLinkedInProps = (linkedIn: IMember['linkedIn']) => {
     const linkedInUrl = linkedIn?.trim() ?? '';
     if (linkedInUrl === '') {
@@ -39,7 +47,12 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
       onClose={onClose}
       fullWidth
       maxWidth='sm'>
-      <DialogTitle sx={{ m: 0, p: 2 }}>
+      <DialogTitle
+        sx={{
+          m: 0,
+          p: 2,
+          borderBottom: '1px solid #e0e0e0',
+        }}>
         Our Team
         <IconButton
           aria-label='close'
@@ -53,47 +66,59 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
         </IconButton>
       </DialogTitle>
 
-      <Box sx={{ px: 2, pb: 2 }}>
-        <List>
-          {teamMembers.map(member => (
-            <ListItem
-              key={member.name}
-              {...getLinkedInProps(member.linkedIn)}
-              sx={{
-                border: '1px solid',
-                borderColor: 'divider',
-                borderRadius: 2,
-                mb: 1.5,
-                transition: 'background-color 0.2s ease',
-                '&:hover': {
-                  backgroundColor: 'action.hover',
-                },
-              }}>
-              <ListItemAvatar>
-                <Avatar
-                  src={
-                    (typeof member.photo.webP === 'string' ? member.photo.webP : member.photo.webP?.src) ||
-                    (typeof member.photo.jpg === 'string' ? member.photo.jpg : member.photo.jpg?.src) ||
-                    undefined
+      <DialogContent>
+        <Box sx={{ px: 2, pb: 2 }}>
+          <List>
+            {teamMembers.map(member => (
+              <ListItem
+                key={member.name}
+                {...getLinkedInProps(member.linkedIn)}
+                sx={{
+                  border: '1px solid',
+                  borderColor: 'divider',
+                  borderRadius: 2,
+                  mb: 1.5,
+                  transition: 'background-color 0.2s ease',
+                  '&:hover': {
+                    backgroundColor: 'action.hover',
+                  },
+                }}>
+                <ListItemAvatar>
+                  <Avatar
+                    src={
+                      (typeof member.photo.webP === 'string' ? member.photo.webP : member.photo.webP?.src) ||
+                      (typeof member.photo.jpg === 'string' ? member.photo.jpg : member.photo.jpg?.src) ||
+                      undefined
+                    }
+                    alt={member.name}
+                  />
+                </ListItemAvatar>
+                <ListItemText
+                  primary={
+                    <Typography
+                      variant='subtitle1'
+                      fontWeight='bold'>
+                      {member.name}
+                    </Typography>
                   }
-                  alt={member.name}
+                  secondary={member.position}
                 />
-              </ListItemAvatar>
-              <ListItemText
-                primary={
-                  <Typography
-                    variant='subtitle1'
-                    fontWeight='bold'>
-                    {member.name}
-                  </Typography>
-                }
-                secondary={member.position}
-              />
-              {member.linkedIn && <LinkedInIcon color='primary' />}
-            </ListItem>
-          ))}
-        </List>
-      </Box>
+                {member.linkedIn && <LinkedInIcon color='primary' />}
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      </DialogContent>
+      {isMobile && (
+        <DialogActions sx={{ borderTop: '1px solid #e0e0e0' }}>
+          <Button
+            onClick={onClose}
+            variant='contained'
+            fullWidth>
+            Close
+          </Button>
+        </DialogActions>
+      )}
     </Dialog>
   );
 }

@@ -3,13 +3,29 @@ import { JSX } from 'react';
 import Image from 'next/image';
 
 import CloseIcon from '@mui/icons-material/Close';
-import { Avatar, Box, Chip, Dialog, DialogContent, DialogTitle, IconButton, Typography } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Button,
+  Chip,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 
 import { deejayWebP } from '@/assets/images/webp';
 
 import { ProjectRoleModalProps } from './types';
 
 export default function ProjectRoleModal({ open, onClose, project }: Readonly<ProjectRoleModalProps>): JSX.Element {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   return (
     <Dialog
       open={open}
@@ -120,6 +136,17 @@ export default function ProjectRoleModal({ open, onClose, project }: Readonly<Pr
           </>
         )}
       </DialogContent>
+
+      {isMobile && (
+        <DialogActions sx={{ borderTop: '1px solid #e0e0e0' }}>
+          <Button
+            onClick={onClose}
+            variant='contained'
+            fullWidth>
+            Close
+          </Button>
+        </DialogActions>
+      )}
     </Dialog>
   );
 }
