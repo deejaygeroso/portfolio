@@ -1,10 +1,16 @@
 # portfolio
 
+## 3.1.2
+
+### Patch Changes
+
+- Add format & build checks to feature pipeline
+
 ## 3.1.1
 
 ### Patch Changes
 
-- Add build to feature pipeline for additional checks
+- Fix roboto font error in local development
 
 ## 3.1.0
 
