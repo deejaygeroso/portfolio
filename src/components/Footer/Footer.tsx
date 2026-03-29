@@ -5,7 +5,8 @@ import { JSX } from 'react';
 import Link from 'next/link';
 
 import { Email, Facebook, GitHub, Instagram, LinkedIn, X as Twitter } from '@mui/icons-material';
-import { Box, IconButton, Typography } from '@mui/material';
+import { Box, IconButton, SvgIconTypeMap, Typography } from '@mui/material';
+import { OverridableComponent } from '@mui/material/OverridableComponent';
 
 import { contacts } from '@/data';
 import { SectionPageIds } from '@/enums';
@@ -14,53 +15,23 @@ import { ISocialMedia } from '@/interfaces';
 import packageJson from '../../../package.json';
 import SectionTitle from '../SectionTitle';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type MuiIconComponent = OverridableComponent<SvgIconTypeMap<Record<string, any>, 'svg'>>;
+
+const SOCIAL_ICON_MAP: Record<string, MuiIconComponent> = {
+  facebook: Facebook,
+  github: GitHub,
+  instagram: Instagram,
+  linkedin: LinkedIn,
+  twitter: Twitter,
+};
+
 export default function Footer(): JSX.Element {
   const year = new Date().getFullYear();
   const appVersion = packageJson.version;
 
   const mailTo = (): void => {
     window.location.href = `mailto:${contacts.email}?subject=Subject&body=message%20goes%20here`;
-  };
-
-  const renderSocialMediaIcon = (socialMediaLink: string): JSX.Element => {
-    switch (socialMediaLink) {
-      case contacts.socialMedias[0].link:
-        return (
-          <Facebook
-            fontSize='inherit'
-            sx={{ color: '#ffffff' }}
-          />
-        );
-      case contacts.socialMedias[1].link:
-        return (
-          <GitHub
-            fontSize='inherit'
-            sx={{ color: '#ffffff' }}
-          />
-        );
-      case contacts.socialMedias[2].link:
-        return (
-          <Instagram
-            fontSize='inherit'
-            sx={{ color: '#ffffff' }}
-          />
-        );
-      case contacts.socialMedias[3].link:
-        return (
-          <LinkedIn
-            fontSize='inherit'
-            sx={{ color: '#ffffff' }}
-          />
-        );
-      case contacts.socialMedias[4].link:
-        return (
-          <Twitter
-            fontSize='inherit'
-            sx={{ color: '#ffffff' }}
-          />
-        );
-    }
-    return <></>;
   };
 
   return (
@@ -85,7 +56,8 @@ export default function Footer(): JSX.Element {
             display: 'flex',
             alignItems: 'center',
             cursor: 'pointer',
-            color: 'text.primary',
+            color: 'inherit',
+            transition: 'color 0.2s ease',
             '&:hover': { color: 'primary.main' },
             mb: 2,
           }}>
@@ -99,23 +71,32 @@ export default function Footer(): JSX.Element {
       )}
 
       <Box>
-        {contacts.socialMedias.map((socialMedia: ISocialMedia) => (
-          <IconButton
-            key={socialMedia.id}
-            component={Link}
-            href={socialMedia.link}
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label={socialMedia.id}
-            sx={{
-              color: 'text.primary',
-              fontSize: { xs: 30, sm: 40, md: 75, lg: 75 },
-              mx: 1,
-              '&:hover': { color: 'primary.main' },
-            }}>
-            {renderSocialMediaIcon(socialMedia.link)}
-          </IconButton>
-        ))}
+        {contacts.socialMedias.map((socialMedia: ISocialMedia) => {
+          const IconComponent = SOCIAL_ICON_MAP[socialMedia.id.toLowerCase()];
+          if (!IconComponent) return null;
+          return (
+            <IconButton
+              key={socialMedia.id}
+              component={Link}
+              href={socialMedia.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={socialMedia.id}
+              sx={{
+                color: '#ffffff',
+                fontSize: { xs: 28, sm: 32, md: 36 },
+                mx: 1,
+                transition: 'transform 0.2s ease, color 0.2s ease',
+                '&:hover': {
+                  color: 'primary.main',
+                  transform: 'scale(1.15)',
+                  background: 'transparent',
+                },
+              }}>
+              <IconComponent fontSize='inherit' />
+            </IconButton>
+          );
+        })}
       </Box>
 
       <Box sx={{ textAlign: 'center', mt: 3 }}>

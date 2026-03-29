@@ -39,6 +39,7 @@ export default function ViewMyWorkButton(): JSX.Element {
         '&:hover': {
           backgroundColor: '#1f2326',
           borderColor: '#e31b6d',
+          color: '#e31b6d',
         },
         mt: 2,
       }}>

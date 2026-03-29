@@ -58,12 +58,12 @@ export default function TestimonialList(): JSX.Element {
                     justifyContent: 'center',
                     alignItems: 'flex-start',
                   }}>
-                  <Avatar sx={{ width: 200, height: 200 }}>
+                  <Avatar sx={{ width: 80, height: 80 }}>
                     <Image
                       src={t.photo.webp || t.photo.default}
                       alt={t.name}
-                      width={200}
-                      height={200}
+                      width={80}
+                      height={80}
                       style={{ borderRadius: '50%' }}
                     />
                   </Avatar>
@@ -99,8 +99,8 @@ export default function TestimonialList(): JSX.Element {
                     sx={{
                       fontSize: {
                         xs: '1rem',
-                        sm: '1.25rem',
-                        md: '1.8rem',
+                        sm: '1.1rem',
+                        md: '1.3rem',
                       },
                       pb: 0,
                       mb: 0,
@@ -112,7 +112,7 @@ export default function TestimonialList(): JSX.Element {
 
                 <Typography
                   variant='body2'
-                  color='#3a6de7'
+                  color='primary.main'
                   sx={{
                     fontWeight: 'bold',
                   }}>
