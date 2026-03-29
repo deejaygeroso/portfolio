@@ -3,21 +3,11 @@
 import { JSX, MouseEvent, useState } from 'react';
 
 import PaletteOutlinedIcon from '@mui/icons-material/PaletteOutlined';
-import {
-  Box,
-  IconButton,
-  Popover,
-  Tooltip,
-  Typography,
-} from '@mui/material';
-import { useTheme as useNextTheme } from 'next-themes';
+import { Box, IconButton, Popover, Tooltip, Typography } from '@mui/material';
 
-import {
-  THEME_KEYS,
-  ThemeKey,
-  themeLabels,
-  themeSwatchColors,
-} from '@/styles/themeMap';
+import { THEME_KEYS, ThemeKey, themeLabels, themeSwatchColors } from '@/styles/themeMap';
+
+import { useTheme as useNextTheme } from 'next-themes';
 
 export default function ThemeSwitcher(): JSX.Element {
   const { resolvedTheme, setTheme } = useNextTheme();
@@ -90,7 +80,10 @@ export default function ThemeSwitcher(): JSX.Element {
             const swatch = themeSwatchColors[key];
             const isActive = resolvedTheme === key;
             return (
-              <Tooltip key={key} title={themeLabels[key]} placement='top'>
+              <Tooltip
+                key={key}
+                title={themeLabels[key]}
+                placement='top'>
                 <Box
                   component='button'
                   type='button'

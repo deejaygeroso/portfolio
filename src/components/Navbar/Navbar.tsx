@@ -23,13 +23,14 @@ import {
   Typography,
   useScrollTrigger,
 } from '@mui/material';
-import { useTheme as useNextTheme } from 'next-themes';
 
 import { deejayWebP } from '@/assets/images/webp';
+import ThemeSwitcher from '@/components/ThemeSwitcher/ThemeSwitcher';
 import { SectionPageIds } from '@/enums';
 import { THEME_KEYS, themeLabels, themeSwatchColors } from '@/styles/themeMap';
 import { scrollToSection } from '@/utils';
-import ThemeSwitcher from '@/components/ThemeSwitcher/ThemeSwitcher';
+
+import { useTheme as useNextTheme } from 'next-themes';
 
 const NAV_LINKS = [
   { label: 'Home', id: SectionPageIds.MAIN_PAGE },
@@ -172,7 +173,9 @@ export default function Navbar(): JSX.Element {
         </List>
         {/* Theme swatches in mobile drawer */}
         <Box sx={{ px: 2, py: 1.5, borderTop: '1px solid rgba(255,255,255,0.12)' }}>
-          <Typography variant='caption' sx={{ color: 'nav.text', opacity: 0.6, textTransform: 'uppercase', letterSpacing: 1 }}>
+          <Typography
+            variant='caption'
+            sx={{ color: 'nav.text', opacity: 0.6, textTransform: 'uppercase', letterSpacing: 1 }}>
             Theme
           </Typography>
           <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap', mt: 1 }}>
@@ -180,11 +183,17 @@ export default function Navbar(): JSX.Element {
               const swatch = themeSwatchColors[key];
               const isActive = resolvedTheme === key;
               return (
-                <Tooltip key={key} title={themeLabels[key]} placement='top'>
+                <Tooltip
+                  key={key}
+                  title={themeLabels[key]}
+                  placement='top'>
                   <Box
                     component='button'
                     type='button'
-                    onClick={() => { setTheme(key); setDrawerOpen(false); }}
+                    onClick={() => {
+                      setTheme(key);
+                      setDrawerOpen(false);
+                    }}
                     aria-label={themeLabels[key]}
                     aria-pressed={isActive}
                     sx={{
