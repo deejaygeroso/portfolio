@@ -19,13 +19,18 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
+  Tooltip,
   Typography,
   useScrollTrigger,
 } from '@mui/material';
 
 import { deejayWebP } from '@/assets/images/webp';
+import ThemeSwitcher from '@/components/ThemeSwitcher/ThemeSwitcher';
 import { SectionPageIds } from '@/enums';
+import { THEME_KEYS, themeLabels, themeSwatchColors } from '@/styles/themeMap';
 import { scrollToSection } from '@/utils';
+
+import { useTheme as useNextTheme } from 'next-themes';
 
 const NAV_LINKS = [
   { label: 'Home', id: SectionPageIds.MAIN_PAGE },
@@ -43,6 +48,8 @@ export default function Navbar(): JSX.Element {
     threshold: 80,
   });
 
+  const { resolvedTheme, setTheme } = useNextTheme();
+
   const handleNavClick = (id: string): void => {
     setDrawerOpen(false);
     scrollToSection(id);
@@ -54,7 +61,7 @@ export default function Navbar(): JSX.Element {
         position='fixed'
         elevation={scrolled ? 4 : 0}
         sx={{
-          bgcolor: scrolled ? 'rgba(23, 26, 28, 0.96)' : 'transparent',
+          bgcolor: scrolled ? 'nav.bg' : 'transparent',
           backdropFilter: scrolled ? 'blur(8px)' : 'none',
           transition: 'background-color 0.3s ease, backdrop-filter 0.3s ease',
         }}>
@@ -78,7 +85,7 @@ export default function Navbar(): JSX.Element {
               variant='h6'
               sx={{
                 fontWeight: 500,
-                color: '#ffffff',
+                color: 'nav.text',
                 cursor: 'pointer',
                 letterSpacing: 1,
                 fontSize: { xs: '1rem', md: '1.1rem' },
@@ -89,13 +96,13 @@ export default function Navbar(): JSX.Element {
           </Box>
 
           {/* Desktop nav */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5 }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
             {NAV_LINKS.map(link => (
               <Button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 sx={{
-                  color: '#ffffff',
+                  color: 'nav.text',
                   textTransform: 'none',
                   fontSize: '0.95rem',
                   fontWeight: 400,
@@ -110,13 +117,14 @@ export default function Navbar(): JSX.Element {
                 {link.label}
               </Button>
             ))}
+            <ThemeSwitcher />
           </Box>
 
           {/* Mobile hamburger */}
           <IconButton
             aria-label='Open navigation menu'
             onClick={() => setDrawerOpen(true)}
-            sx={{ display: { xs: 'flex', md: 'none' }, color: '#ffffff' }}>
+            sx={{ display: { xs: 'flex', md: 'none' }, color: 'nav.text' }}>
             <MenuIcon />
           </IconButton>
         </Toolbar>
@@ -130,15 +138,15 @@ export default function Navbar(): JSX.Element {
         PaperProps={{
           sx: {
             width: 240,
-            bgcolor: '#171a1c',
-            color: '#ffffff',
+            bgcolor: 'nav.drawerBg',
+            color: 'nav.text',
           },
         }}>
         <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 1 }}>
           <IconButton
             aria-label='Close navigation menu'
             onClick={() => setDrawerOpen(false)}
-            sx={{ color: '#ffffff' }}>
+            sx={{ color: 'nav.text' }}>
             <CloseIcon />
           </IconButton>
         </Box>
@@ -156,13 +164,59 @@ export default function Navbar(): JSX.Element {
                 <ListItemText
                   primary={link.label}
                   slotProps={{
-                    primary: { sx: { color: '#ffffff', fontWeight: 400 } },
+                    primary: { sx: { color: 'nav.text', fontWeight: 400 } },
                   }}
                 />
               </ListItemButton>
             </ListItem>
           ))}
         </List>
+        {/* Theme swatches in mobile drawer */}
+        <Box sx={{ px: 2, py: 1.5, borderTop: '1px solid rgba(255,255,255,0.12)' }}>
+          <Typography
+            variant='caption'
+            sx={{ color: 'nav.text', opacity: 0.6, textTransform: 'uppercase', letterSpacing: 1 }}>
+            Theme
+          </Typography>
+          <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap', mt: 1 }}>
+            {THEME_KEYS.map(key => {
+              const swatch = themeSwatchColors[key];
+              const isActive = resolvedTheme === key;
+              return (
+                <Tooltip
+                  key={key}
+                  title={themeLabels[key]}
+                  placement='top'>
+                  <Box
+                    component='button'
+                    type='button'
+                    onClick={() => {
+                      setTheme(key);
+                      setDrawerOpen(false);
+                    }}
+                    aria-label={themeLabels[key]}
+                    aria-pressed={isActive}
+                    sx={{
+                      width: 24,
+                      height: 24,
+                      borderRadius: '50%',
+                      background: swatch.bg,
+                      borderWidth: isActive ? 3 : 2,
+                      borderStyle: 'solid',
+                      borderColor: isActive ? swatch.border : 'rgba(255,255,255,0.3)',
+                      outline: isActive ? `2px solid ${swatch.border}` : 'none',
+                      outlineOffset: 1,
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s ease',
+                      '&:hover': { transform: 'scale(1.15)' },
+                      p: 0,
+                    }}
+                  />
+                </Tooltip>
+              );
+            })}
+          </Box>
+        </Box>
       </Drawer>
     </>
   );

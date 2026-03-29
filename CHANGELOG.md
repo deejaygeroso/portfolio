@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.3.0
+
+### Minor Changes
+
+- Add Theme Options
+
 ## 3.2.0
 
 ### Minor Changes

@@ -54,7 +54,7 @@ export default function WelcomeScreen(): JSX.Element {
           justifyContent: 'center',
           flexDirection: 'column',
           textAlign: 'center',
-          background: '#171a1cf2',
+          bgcolor: 'welcome.overlayBg',
           minHeight: '100vh',
         }}>
         <Container
@@ -77,10 +77,10 @@ export default function WelcomeScreen(): JSX.Element {
             id='title1'
             sx={{
               typography: { xs: 'h5', sm: 'h4', md: 'h3' },
-              color: '#d2f5ff',
+              color: 'welcome.titleColor',
               mt: 0,
               '& > #title1-author-name': {
-                color: '#e31b6d',
+                color: 'welcome.accentColor',
               },
             }}
           />
@@ -88,7 +88,7 @@ export default function WelcomeScreen(): JSX.Element {
             id='title2'
             sx={{
               typography: { xs: 'h5', sm: 'h4', md: 'h3' },
-              color: '#d2f5ff',
+              color: 'welcome.titleColor',
               mt: 1,
             }}
           />

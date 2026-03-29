@@ -28,7 +28,7 @@ export default function TestimonialList(): JSX.Element {
     <Box
       component='section'
       id={SectionPageIds.TESTIMONIALS}
-      sx={{ mt: 4, py: 4, background: '#fff' }}>
+      sx={{ mt: 4, py: 4, bgcolor: 'background.paper' }}>
       <SectionTitle
         title='Testimonials'
         subtitle='What people I worked with say about me'
@@ -46,7 +46,8 @@ export default function TestimonialList(): JSX.Element {
                 display: 'flex',
                 flexDirection: { xs: 'column', sm: 'row' },
                 gap: 2,
-                mb: { xs: 1, m: 5 },
+                p: { xs: 2, sm: 3, md: 4 },
+                mb: { xs: 2, sm: 3, md: 4 },
               }}>
               {/* Left: Profile (hidden on mobile) */}
               {!isMobile && (

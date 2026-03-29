@@ -1,0 +1,21 @@
+# Build outputs
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Package manager
+pnpm-lock.yaml
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Public assets (images/icons, not code)
+public/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*

@@ -139,7 +139,7 @@ export default function ProjectRoleModal({ open, onClose, project }: Readonly<Pr
       </DialogContent>
 
       {isMobile && (
-        <DialogActions sx={{ borderTop: '1px solid #e0e0e0' }}>
+        <DialogActions>
           <Button
             onClick={onClose}
             variant='contained'
