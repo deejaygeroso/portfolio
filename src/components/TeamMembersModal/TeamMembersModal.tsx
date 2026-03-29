@@ -43,6 +43,7 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
 
   return (
     <Dialog
+      closeAfterTransition={false}
       open={open}
       onClose={onClose}
       fullWidth

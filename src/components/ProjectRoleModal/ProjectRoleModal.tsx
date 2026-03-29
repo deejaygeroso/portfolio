@@ -28,6 +28,7 @@ export default function ProjectRoleModal({ open, onClose, project }: Readonly<Pr
 
   return (
     <Dialog
+      closeAfterTransition={false}
       open={open}
       onClose={onClose}
       fullWidth
