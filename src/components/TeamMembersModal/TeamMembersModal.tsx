@@ -60,7 +60,7 @@ export default function TeamMembersModal({ open, onClose, teamMembers }: Readonl
           sx={{
             position: 'absolute',
             right: 8,
-            top: 8,
+            top: 14,
           }}>
           <CloseIcon />
         </IconButton>
