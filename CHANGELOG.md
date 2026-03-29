@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.1.1
+
+### Patch Changes
+
+- Fix roboto font error in local development
+
 ## 3.1.0
 
 ### Minor Changes
