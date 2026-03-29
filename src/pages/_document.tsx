@@ -24,11 +24,7 @@ export default class MyDocument extends Document {
           <GlobalStyles
             styles={{
               html: { height: '100%', width: '100%', margin: 0, padding: 0 },
-              body: {
-                margin: 0,
-                padding: 0,
-                backgroundColor: '#f5f5f5',
-              },
+              body: { margin: 0, padding: 0 },
               a: { textDecoration: 'none', color: 'inherit' },
             }}
           />
