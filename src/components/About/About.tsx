@@ -80,7 +80,7 @@ export default function About(): JSX.Element {
             textAlign: { xs: 'left', md: 'center' },
             mb: 6,
           }}>
-          “Find what feels like play to you, but looks like work for others” — Naval Ravikant
+          “Find what feels like play to you, but looks like work to others” — Naval Ravikant
         </Typography>
 
         {/* Stats */}
