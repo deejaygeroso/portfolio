@@ -21,7 +21,7 @@ export const THEME_KEYS = [
 export type ThemeKey = (typeof THEME_KEYS)[number];
 
 export const themeMap: Record<ThemeKey, Theme> = {
-  'light': lightTheme,
+  light: lightTheme,
   'dark-ocean': darkOceanTheme,
   'dark-slate': darkSlateTheme,
   'warm-cream': warmCreamTheme,
@@ -31,7 +31,7 @@ export const themeMap: Record<ThemeKey, Theme> = {
 };
 
 export const themeLabels: Record<ThemeKey, string> = {
-  'light': 'Light',
+  light: 'Light',
   'dark-ocean': 'Dark Ocean',
   'dark-slate': 'Dark Slate',
   'warm-cream': 'Warm Cream',
@@ -41,7 +41,7 @@ export const themeLabels: Record<ThemeKey, string> = {
 };
 
 export const themeSwatchColors: Record<ThemeKey, { bg: string; border: string }> = {
-  'light': { bg: '#f5f5f5', border: '#1b75d2' },
+  light: { bg: '#f5f5f5', border: '#1b75d2' },
   'dark-ocean': { bg: '#0d1117', border: '#58a6ff' },
   'dark-slate': { bg: '#0f172a', border: '#38bdf8' },
   'warm-cream': { bg: '#fdf6ec', border: '#c2651a' },
@@ -49,3 +49,11 @@ export const themeSwatchColors: Record<ThemeKey, { bg: string; border: string }>
   'arctic-mint': { bg: '#f0fafb', border: '#0e8a94' },
   'lavender-mist': { bg: '#f5f3ff', border: '#6d28d9' },
 };
+
+// Helper function for safe theme lookup
+export function getTheme(key: string): Theme {
+  if (THEME_KEYS.includes(key as ThemeKey)) {
+    return themeMap[key as ThemeKey];
+  }
+  return themeMap.light;
+}

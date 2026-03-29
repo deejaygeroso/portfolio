@@ -1,31 +1,44 @@
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 
 import type { AppProps } from 'next/app';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+
+import { THEME_KEYS, getTheme, themeMap } from '@/styles/themeMap';
+
 import { ThemeProvider as NextThemesProvider, useTheme as useNextTheme } from 'next-themes';
-
-import { THEME_KEYS, themeMap } from '@/styles/themeMap';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function MuiThemeWrapper({ children }: { children: React.ReactNode }) {
   const { resolvedTheme } = useNextTheme();
+  const [mounted, setMounted] = React.useState(false);
 
-  // resolvedTheme is undefined on the first render before next-themes reads localStorage.
-  // _document.tsx injects an inline script that sets data-theme on <html> from localStorage
-  // before React renders, so this attribute is already correct on the first paint.
+  // Wait for client-side hydration to complete
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const muiTheme = useMemo(() => {
-    const htmlAttr =
-      typeof document !== 'undefined'
-        ? document.documentElement.getAttribute('data-theme')
-        : null;
-    const key = THEME_KEYS.find(k => k === (resolvedTheme ?? htmlAttr)) ?? 'light';
-    return themeMap[key];
-  }, [resolvedTheme]);
+    // During SSR and before hydration, use a consistent default
+    if (!mounted) {
+      return themeMap.light; // or themeMap.dark based on your preference
+    }
+
+    return getTheme(resolvedTheme ?? 'light');
+  }, [resolvedTheme, mounted]);
+
+  // Prevent hydration mismatch by not rendering theme-dependent content until mounted
+  if (!mounted) {
+    return (
+      <ThemeProvider theme={themeMap.light}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
+    );
+  }
 
   return (
     <ThemeProvider theme={muiTheme}>
@@ -34,7 +47,6 @@ function MuiThemeWrapper({ children }: { children: React.ReactNode }) {
     </ThemeProvider>
   );
 }
-
 export default function MyApp(props: Readonly<AppProps>) {
   const { Component, pageProps } = props;
 
