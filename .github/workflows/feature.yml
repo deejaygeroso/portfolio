@@ -70,13 +70,11 @@ jobs:
       # - name: Generate Prisma Client
       #   run: pnpm prisma:generate
 
-      # Lint
-      - name: Lint
-        run: pnpm lint
-
-      # Forat
-      - name: Format
-        run: pnpm format:check
+      # Run Prettiern & Linting checks
+      - name: Run all checks
+        run: |
+          pnpm format:check
+          pnpm lint
 
       # Build
       - name: Build
