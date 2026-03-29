@@ -16,8 +16,8 @@ function MuiThemeWrapper({ children }: { children: React.ReactNode }) {
   const { resolvedTheme } = useNextTheme();
 
   // resolvedTheme is undefined on the first render before next-themes reads localStorage.
-  // For static export, next-themes has already written data-theme to <html> via its inline
-  // script before React renders — read it directly so MUI gets the right theme immediately.
+  // _document.tsx injects an inline script that sets data-theme on <html> from localStorage
+  // before React renders, so this attribute is already correct on the first paint.
   const muiTheme = useMemo(() => {
     const htmlAttr =
       typeof document !== 'undefined'
