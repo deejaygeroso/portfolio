@@ -93,14 +93,17 @@ export default function ThemeSwitcher(): JSX.Element {
               <Tooltip key={key} title={themeLabels[key]} placement='top'>
                 <Box
                   component='button'
+                  type='button'
                   onClick={() => handleSelect(key)}
                   aria-label={themeLabels[key]}
+                  aria-pressed={isActive}
                   sx={{
                     width: 28,
                     height: 28,
                     borderRadius: '50%',
                     background: swatch.bg,
-                    border: isActive ? `3px solid ${swatch.border}` : '2px solid',
+                    borderWidth: isActive ? 3 : 2,
+                    borderStyle: 'solid',
                     borderColor: isActive ? swatch.border : 'divider',
                     cursor: 'pointer',
                     outline: isActive ? `2px solid ${swatch.border}` : 'none',
