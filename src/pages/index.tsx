@@ -6,8 +6,8 @@ import Head from 'next/head';
 import { Box } from '@mui/material';
 
 import Navbar from '@/components/Navbar';
-import WelcomeScreen from '@/components/WelcomeScreen';
 import ScrollToTopFab from '@/components/ScrollToTopFab';
+import WelcomeScreen from '@/components/WelcomeScreen';
 
 const About = dynamic(() => import('@/components/About'));
 const Projects = dynamic(() => import('@/components/Projects'));

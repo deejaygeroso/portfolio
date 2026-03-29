@@ -2,8 +2,8 @@
 
 import { JSX } from 'react';
 
-import { Fab, useScrollTrigger, Zoom } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { Fab, Zoom, useScrollTrigger } from '@mui/material';
 
 export default function ScrollToTopFab(): JSX.Element {
   const visible = useScrollTrigger({

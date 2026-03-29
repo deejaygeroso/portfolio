@@ -15,8 +15,8 @@ import {
   CardMedia,
   Container,
   IconButton,
-  Typography,
   Tooltip,
+  Typography,
 } from '@mui/material';
 
 import ProjectRoleModal from '@/components/ProjectRoleModal';
