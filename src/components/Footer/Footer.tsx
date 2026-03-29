@@ -39,8 +39,8 @@ export default function Footer(): JSX.Element {
       component='footer'
       id={SectionPageIds.FOOTER}
       sx={{
-        bgcolor: '#181b1e',
-        color: '#ffffff',
+        bgcolor: 'nav.drawerBg',
+        color: 'nav.text',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -83,7 +83,7 @@ export default function Footer(): JSX.Element {
               rel='noopener noreferrer'
               aria-label={socialMedia.id}
               sx={{
-                color: '#ffffff',
+                color: 'nav.text',
                 fontSize: { xs: 28, sm: 32, md: 36 },
                 mx: 1,
                 transition: 'transform 0.2s ease, color 0.2s ease',
