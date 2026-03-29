@@ -1,11 +1,13 @@
 import { JSX } from 'react';
 
+import Image from 'next/image';
+
 import CloseIcon from '@mui/icons-material/Close';
 import { Avatar, Box, Chip, Dialog, DialogContent, DialogTitle, IconButton, Typography } from '@mui/material';
 
-import { ProjectRoleModalProps } from './types';
-import Image from 'next/image';
 import { deejayWebP } from '@/assets/images/webp';
+
+import { ProjectRoleModalProps } from './types';
 
 export default function ProjectRoleModal({ open, onClose, project }: Readonly<ProjectRoleModalProps>): JSX.Element {
   return (
@@ -25,7 +27,7 @@ export default function ProjectRoleModal({ open, onClose, project }: Readonly<Pr
           <Avatar sx={{ width: 50, height: 50 }}>
             <Image
               src={deejayWebP}
-              alt="Deejay Geroso"
+              alt='Deejay Geroso'
               width={50}
               height={50}
               style={{ borderRadius: '50%' }}

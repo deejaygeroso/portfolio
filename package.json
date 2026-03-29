@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "format:check": "prettier --check ./src",
+    "format:write": "prettier --write ./src",
     "tsc:check": "tsc --noEmit ./src/**/*.ts"
   },
   "engines": {

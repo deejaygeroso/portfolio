@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.1.2
+
+### Patch Changes
+
+- Add format & build checks to feature pipeline
+
 ## 3.1.1
 
 ### Patch Changes

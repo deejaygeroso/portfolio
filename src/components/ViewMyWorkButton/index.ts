@@ -1,3 +1,3 @@
-import ViewMyWorkButton from './ViewMyWorkButton'
+import ViewMyWorkButton from './ViewMyWorkButton';
 
-export default ViewMyWorkButton
+export default ViewMyWorkButton;

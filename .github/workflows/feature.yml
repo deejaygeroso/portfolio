@@ -24,16 +24,18 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: "24.11.1"
-          pnpm_version: "10.24.0"
+          node_version: '24.11.1'
+          pnpm_version: '10.24.0'
 
-      # Generate Prisma Client (Required for building and testing the App)
-      # - name: Generate Prisma Client
-      #   run: pnpm prisma:generate
+      # Run Prettiern & Linting checks
+      - name: Run all checks
+        run: |
+          pnpm format:check
+          pnpm lint
 
-      # Lint
-      - name: Lint
-        run: pnpm lint
+      # Build
+      - name: Build
+        run: pnpm build
 
   trivy-scan:
     runs-on: ubuntu-latest
@@ -47,17 +49,17 @@ jobs:
       - name: Setup and Install Dependencies
         uses: ./.github/actions/setup
         with:
-          node_version: "24.11.1"
-          pnpm_version: "10.24.0"
+          node_version: '24.11.1'
+          pnpm_version: '10.24.0'
 
       # Vulnerability & Secret scan
       - name: Vulnerability & Secret scan
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: "fs"
-          format: "table"
-          exit-code: "1"
+          scan-type: 'fs'
+          format: 'table'
+          exit-code: '1'
           ignore-unfixed: false
-          severity: "CRITICAL,HIGH,MEDIUM"
-          scanners: "secret,vuln"
-          vuln-type: "library"
+          severity: 'CRITICAL,HIGH,MEDIUM'
+          scanners: 'secret,vuln'
+          vuln-type: 'library'
