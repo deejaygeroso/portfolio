@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.2.0
+
+### Minor Changes
+
+- Improve UI/UX via Claude Code
+
 ## 3.1.2
 
 ### Patch Changes

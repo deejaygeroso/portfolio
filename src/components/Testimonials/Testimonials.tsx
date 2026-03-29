@@ -41,13 +41,12 @@ export default function TestimonialList(): JSX.Element {
             <Card
               key={t.date + index}
               sx={{
-                mb: 3,
                 border: 'none',
                 boxShadow: 'none',
                 display: 'flex',
                 flexDirection: { xs: 'column', sm: 'row' },
-                p: 2,
                 gap: 2,
+                mb: { xs: 1, m: 5 },
               }}>
               {/* Left: Profile (hidden on mobile) */}
               {!isMobile && (
@@ -58,73 +57,78 @@ export default function TestimonialList(): JSX.Element {
                     justifyContent: 'center',
                     alignItems: 'flex-start',
                   }}>
-                  <Avatar sx={{ width: 200, height: 200 }}>
+                  <Avatar sx={{ width: 210, height: 210 }}>
                     <Image
                       src={t.photo.webp || t.photo.default}
                       alt={t.name}
-                      width={200}
-                      height={200}
-                      style={{ borderRadius: '50%' }}
+                      width={210}
+                      height={210}
                     />
                   </Avatar>
                 </Box>
               )}
 
               {/* Right: Details */}
-              <Box sx={{ flex: 2 }}>
+              <Box sx={{ display: 'flex', flexDirection: 'column', flex: 2, gap: 2 }}>
                 <Box
                   sx={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: 1,
+                    justifyContent: 'flex-start',
+                    gap: 2,
                     mb: { xs: 2, sm: 2, md: 0, lg: 0 },
                   }}>
                   {/* Small inline avatar on mobile */}
                   {isMobile && (
-                    <Avatar sx={{ width: 40, height: 40 }}>
+                    <Avatar sx={{ width: 80, height: 80 }}>
                       <Image
                         src={t.photo.webp || t.photo.default}
                         alt={t.name}
-                        width={40}
-                        height={40}
+                        width={80}
+                        height={80}
                         style={{ borderRadius: '50%' }}
                       />
                     </Avatar>
                   )}
 
-                  <Typography
-                    variant='subtitle1'
-                    component='h3'
-                    fontWeight='bold'
-                    sx={{
-                      fontSize: {
-                        xs: '1rem',
-                        sm: '1.25rem',
-                        md: '1.8rem',
-                      },
-                      pb: 0,
-                      mb: 0,
-                      lineHeight: 1.2,
-                    }}>
-                    {t.name}
-                  </Typography>
+                  <Box
+                    display='flex'
+                    flexDirection='column'
+                    alignItems='flex-start'
+                    justifyContent='center'>
+                    <Typography
+                      variant='subtitle1'
+                      component='h3'
+                      fontWeight='bold'
+                      sx={{
+                        fontSize: {
+                          xs: '1.4rem',
+                          sm: '1.5rem',
+                          md: '1.8rem',
+                        },
+                        pb: 0,
+                        mb: 0,
+                        lineHeight: 1.2,
+                      }}>
+                      {t.name}
+                    </Typography>
+                    <Typography
+                      variant='body2'
+                      color='primary.main'
+                      sx={{
+                        fontWeight: 'bold',
+                      }}>
+                      {t.position}
+                    </Typography>
+                    <Typography
+                      variant='caption'
+                      color='text.secondary'
+                      fontStyle='italic'
+                      display='block'>
+                      {t.date}
+                    </Typography>
+                  </Box>
                 </Box>
-
-                <Typography
-                  variant='body2'
-                  color='#3a6de7'
-                  sx={{
-                    fontWeight: 'bold',
-                  }}>
-                  {t.position}
-                </Typography>
-                <Typography
-                  variant='caption'
-                  color='text.secondary'
-                  display='block'
-                  mb={1}>
-                  {t.date}
-                </Typography>
 
                 <CardContent sx={{ p: 0 }}>
                   {t.comments.map((comment, i) => (

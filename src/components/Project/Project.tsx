@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { JSX } from '@emotion/react/jsx-runtime';
 import Image from 'next/image';
 
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import {
   Avatar,
@@ -16,6 +15,7 @@ import {
   CardMedia,
   Container,
   IconButton,
+  Tooltip,
   Typography,
 } from '@mui/material';
 
@@ -50,15 +50,10 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
   };
 
   return (
-    <Container sx={{ py: { xs: 1, sm: 2, md: 6 } }}>
+    <Container sx={{ py: { xs: 1, sm: 2, md: 2 } }}>
       <Card sx={{ width: '100%', maxWidth: 845, mx: 'auto' }}>
         <CardHeader
           avatar={<Avatar>{project.name.charAt(0)}</Avatar>}
-          action={
-            <IconButton aria-label='More options'>
-              <MoreVertIcon />
-            </IconButton>
-          }
           title={project.name}
           subheader={renderSubHeader(project)}
           sx={{ borderBottom: '1px solid #ccc' }}
@@ -130,21 +125,23 @@ export default function ProjectCard({ project }: Readonly<ProjectProps>): JSX.El
         </CardContent>
 
         <CardActions>
-          <IconButton
-            aria-label='Open project website'
-            onClick={() => window.open(project.domains[0]?.url, '_blank', 'noopener,noreferrer')}
-            color='primary'>
-            <OpenInNewIcon />
-          </IconButton>
+          <Tooltip title='Visit project website'>
+            <IconButton
+              aria-label='Open project website'
+              onClick={() => window.open(project.domains[0]?.url, '_blank', 'noopener,noreferrer')}
+              color='primary'>
+              <OpenInNewIcon />
+            </IconButton>
+          </Tooltip>
           <Button
             size='small'
             onClick={(): void => setProjectRoleModalOpen(true)}>
-            Role
+            My Role
           </Button>
           <Button
             size='small'
             onClick={(): void => setTeamMembersModalOpen(true)}>
-            Teammates
+            Team
           </Button>
         </CardActions>
       </Card>

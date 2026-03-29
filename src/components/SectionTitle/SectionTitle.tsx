@@ -17,7 +17,8 @@ export default function SectionTitle({ title, subtitle }: Readonly<SectionTitleP
       }}>
       {title && (
         <Typography
-          fontSize={{ xs: 40, sm: 50, md: 60, lg: 60 }}
+          fontSize={{ xs: 28, sm: 36, md: 44 }}
+          fontWeight={700}
           marginTop={{ xs: 4, sm: 4, md: 0, lg: 0 }}
           variant='h2'>
           {title}
