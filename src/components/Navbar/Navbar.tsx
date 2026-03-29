@@ -2,10 +2,13 @@
 
 import { JSX, useState } from 'react';
 
+import Image from 'next/image';
+
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar,
+  Avatar,
   Box,
   Button,
   Divider,
@@ -20,6 +23,7 @@ import {
   useScrollTrigger,
 } from '@mui/material';
 
+import { deejayWebP } from '@/assets/images/webp';
 import { SectionPageIds } from '@/enums';
 import { scrollToSection } from '@/utils';
 
@@ -55,18 +59,34 @@ export default function Navbar(): JSX.Element {
           transition: 'background-color 0.3s ease, backdrop-filter 0.3s ease',
         }}>
         <Toolbar sx={{ justifyContent: 'space-between', px: { xs: 2, md: 4 } }}>
-          <Typography
-            variant='h6'
-            sx={{
-              fontWeight: 700,
-              color: '#ffffff',
-              cursor: 'pointer',
-              letterSpacing: 1,
-              fontSize: { xs: '1rem', md: '1.1rem' },
-            }}
-            onClick={() => handleNavClick(SectionPageIds.MAIN_PAGE)}>
-            Deejay Geroso
-          </Typography>
+          <Box
+            display='flex'
+            alignItems='center'
+            gap={1.5}>
+            <Avatar
+              sx={{ width: 40, height: 40, cursor: 'pointer' }}
+              onClick={() => handleNavClick(SectionPageIds.MAIN_PAGE)}>
+              <Image
+                src={deejayWebP}
+                alt='Deejay Geroso'
+                width={40}
+                height={40}
+                style={{ borderRadius: '50%' }}
+              />
+            </Avatar>
+            <Typography
+              variant='h6'
+              sx={{
+                fontWeight: 500,
+                color: '#ffffff',
+                cursor: 'pointer',
+                letterSpacing: 1,
+                fontSize: { xs: '1rem', md: '1.1rem' },
+              }}
+              onClick={() => handleNavClick(SectionPageIds.MAIN_PAGE)}>
+              Deejay Geroso
+            </Typography>
+          </Box>
 
           {/* Desktop nav */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5 }}>
