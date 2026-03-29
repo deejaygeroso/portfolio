@@ -74,6 +74,10 @@ jobs:
       - name: Lint
         run: pnpm lint
 
+      # Forat
+      - name: Format
+        run: pnpm format:check
+
       # Build
       - name: Build
         run: pnpm build
