@@ -3,19 +3,11 @@ import { JSX } from 'react';
 import { Button } from '@mui/material';
 
 import { SectionPageIds } from '@/enums';
+import { scrollToSection } from '@/utils';
 
 export default function ViewMyWorkButton(): JSX.Element {
   const goToProjects = (): void => {
-    const htmlEl = document.documentElement;
-    htmlEl.classList.add('smooth-scroll');
-    setTimeout(() => {
-      htmlEl.classList.remove('smooth-scroll');
-    }, 600);
-
-    const el = document.getElementById(SectionPageIds.PROJECTS);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToSection(SectionPageIds.PROJECTS);
   };
 
   return (
