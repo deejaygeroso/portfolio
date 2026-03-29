@@ -465,8 +465,6 @@ git commit -m "feat: add themeMap with 7 theme keys, labels, and swatch colors"
 - [ ] **Step 1: Replace `src/pages/_app.tsx` entirely**
 
 ```typescript
-'use client';
-
 import { useMemo } from 'react';
 
 import type { AppProps } from 'next/app';
