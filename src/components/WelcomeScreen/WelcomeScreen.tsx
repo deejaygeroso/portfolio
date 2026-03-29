@@ -54,7 +54,7 @@ export default function WelcomeScreen(): JSX.Element {
           justifyContent: 'center',
           flexDirection: 'column',
           textAlign: 'center',
-          background: 'welcome.overlayBg',
+          bgcolor: 'welcome.overlayBg',
           minHeight: '100vh',
         }}>
         <Container
