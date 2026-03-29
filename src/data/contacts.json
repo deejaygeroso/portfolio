@@ -2,23 +2,23 @@
   "email": "",
   "socialMedias": [
     {
-      "id": "facebook-link",
+      "id": "facebook",
       "link": "https://www.facebook.com/deejaygeroso"
     },
     {
-      "id": "github-link",
+      "id": "github",
       "link": "https://github.com/deejaygeroso"
     },
     {
-      "id": "instagram-link",
+      "id": "instagram",
       "link": "https://www.instagram.com/deejaygeroso"
     },
     {
-      "id": "linkedin-link",
+      "id": "linkedin",
       "link": "https://www.linkedin.com/in/deejaygeroso"
     },
     {
-      "id": "twitter-link",
+      "id": "twitter",
       "link": "https://twitter.com/deejaygeroso"
     }
   ]
