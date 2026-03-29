@@ -33,9 +33,7 @@ export default function MyApp(): JSX.Element {
           <About />
         </FadeInOnScroll>
 
-        <FadeInOnScroll>
-          <Projects />
-        </FadeInOnScroll>
+        <Projects />
 
         <FadeInOnScroll>
           <Testimonials />

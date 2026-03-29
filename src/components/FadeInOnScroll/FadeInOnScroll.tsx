@@ -16,7 +16,8 @@ export default function FadeInOnScroll({ children, delay = 0 }: Readonly<FadeInO
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) {
-      setVisible(true);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setVisible(true); // Triggers one additional render, acceptable for this use case
       return;
     }
 

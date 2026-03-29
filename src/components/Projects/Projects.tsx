@@ -7,20 +7,26 @@ import SectionTitle from '@/components/SectionTitle';
 import { projects } from '@/data';
 import { SectionPageIds } from '@/enums';
 
+import FadeInOnScroll from '../FadeInOnScroll';
+
 export default function Projects(): JSX.Element {
   return (
     <Box
       component='section'
       id={SectionPageIds.PROJECTS}>
-      <SectionTitle
-        title='Projects'
-        subtitle='A selection of projects I was involved with during my career'
-      />
-      {projects.map(project => (
-        <Project
-          key={project.name}
-          project={project}
+      <FadeInOnScroll>
+        <SectionTitle
+          title='Projects'
+          subtitle='A selection of projects I was involved with during my career'
         />
+      </FadeInOnScroll>
+      {projects.map(project => (
+        <FadeInOnScroll key={project.name}>
+          <Project
+            key={project.name}
+            project={project}
+          />
+        </FadeInOnScroll>
       ))}
     </Box>
   );
