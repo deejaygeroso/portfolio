@@ -15,10 +15,15 @@ import 'swiper/css/pagination';
 function MuiThemeWrapper({ children }: { children: React.ReactNode }) {
   const { resolvedTheme } = useNextTheme();
 
-  // resolvedTheme is undefined on the initial render before next-themes reads localStorage.
-  // We fall back to 'light' so MUI always has a valid theme object.
+  // resolvedTheme is undefined on the first render before next-themes reads localStorage.
+  // For static export, next-themes has already written data-theme to <html> via its inline
+  // script before React renders — read it directly so MUI gets the right theme immediately.
   const muiTheme = useMemo(() => {
-    const key = THEME_KEYS.find(k => k === resolvedTheme) ?? 'light';
+    const htmlAttr =
+      typeof document !== 'undefined'
+        ? document.documentElement.getAttribute('data-theme')
+        : null;
+    const key = THEME_KEYS.find(k => k === (resolvedTheme ?? htmlAttr)) ?? 'light';
     return themeMap[key];
   }, [resolvedTheme]);
 
