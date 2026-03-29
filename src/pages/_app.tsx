@@ -1,5 +1,3 @@
-'use client';
-
 import { useMemo } from 'react';
 
 import type { AppProps } from 'next/app';
@@ -17,6 +15,8 @@ import 'swiper/css/pagination';
 function MuiThemeWrapper({ children }: { children: React.ReactNode }) {
   const { resolvedTheme } = useNextTheme();
 
+  // resolvedTheme is undefined on the initial render before next-themes reads localStorage.
+  // We fall back to 'light' so MUI always has a valid theme object.
   const muiTheme = useMemo(() => {
     const key = THEME_KEYS.find(k => k === resolvedTheme) ?? 'light';
     return themeMap[key];
@@ -37,7 +37,8 @@ export default function MyApp(props: Readonly<AppProps>) {
     <NextThemesProvider
       themes={[...THEME_KEYS]}
       defaultTheme='light'
-      attribute='data-theme'>
+      attribute='data-theme'
+      enableSystem={false}>
       <MuiThemeWrapper>
         <Component {...pageProps} />
       </MuiThemeWrapper>
