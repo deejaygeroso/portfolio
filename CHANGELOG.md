@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.1.1
+
+### Patch Changes
+
+- Add build to feature pipeline for additional checks
+
 ## 3.1.0
 
 ### Minor Changes
