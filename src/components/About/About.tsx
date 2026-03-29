@@ -65,9 +65,10 @@ export default function About(): JSX.Element {
             textAlign: { xs: 'left', md: 'center' },
             mb: 2,
           }}>
-          I build strong cross-functional partnerships with product owners, designers, and stakeholders to align
-          engineering work with business goals. As technology evolves rapidly with AI, I&apos;m highly adaptable and
-          actively adopting these new tools and workflows to deliver greater value and stay ahead of the curve.
+          I build strong cross-functional partnerships with product owners, designers, team leaders, dev-ops, QA&apos;s,
+          developers and stakeholders to align engineering work with business goals. As technology evolves rapidly with
+          AI, I&apos;m highly adaptable and actively adopting these new tools and workflows to deliver greater value and
+          stay ahead of the curve.
         </Typography>
 
         <Typography
@@ -79,8 +80,7 @@ export default function About(): JSX.Element {
             textAlign: { xs: 'left', md: 'center' },
             mb: 6,
           }}>
-          I care deeply about performance, automation, and scalability — building systems and tooling that let teams
-          ship faster and work with confidence.
+          “Find what feels like play to you, but looks like work for others” — Naval Ravikant
         </Typography>
 
         {/* Stats */}
