@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.5.0
+
+### Minor Changes
+
+- Add and Configured Playwright E2E Tests
+
 ## 3.4.0
 
 ### Minor Changes

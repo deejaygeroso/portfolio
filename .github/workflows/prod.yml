@@ -51,3 +51,40 @@ jobs:
           tag_name: v${{ steps.lib-version.outputs.VERSION }}
           draft: false
           prerelease: false
+
+  smoke-test:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Setup and Install Dependencies
+      - name: Setup and Install Dependencies
+        uses: ./.github/actions/setup
+        with:
+          node_version: '24.11.1'
+          pnpm_version: '10.24.0'
+
+      # Wait for Render to finish deploying
+      - name: Wait for Render deploy
+        run: sleep 60
+
+      # Install Playwright Chromium
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      # Run prod smoke tests
+      - name: Run Smoke Tests (prod)
+        run: pnpm test:e2e:prod
+
+      # Upload report on failure
+      - name: Upload Playwright Report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-prod
+          path: playwright-report/
+          retention-days: 7

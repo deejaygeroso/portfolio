@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,7 +9,9 @@
     "lint": "eslint",
     "format:check": "prettier --check ./src",
     "format:write": "prettier --write ./src",
-    "tsc:check": "tsc --noEmit ./src/**/*.ts"
+    "tsc:check": "tsc --noEmit ./src/**/*.ts",
+    "test:e2e": "playwright test --config=e2e/playwright.config.ts",
+    "test:e2e:prod": "playwright test --config=e2e/playwright.config.prod.ts"
   },
   "engines": {
     "node": "24.11.1"
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
+    "@playwright/test": "^1.58.2",
     "@types/node": "^25.5.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -57,9 +60,11 @@
     "overrides": {
       "@types/react": "19.2.14",
       "@types/react-dom": "19.2.3",
-      "flatted": "3.4.0",
+      "flatted": "3.4.2",
       "lodash-es": "4.17.23",
-      "minimatch": "9.0.7"
+      "minimatch": "9.0.7",
+      "picomatch": "2.3.2",
+      "yaml": "1.10.3"
     }
   }
 }
