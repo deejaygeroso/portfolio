@@ -1,5 +1,11 @@
 # portfolio
 
+## 3.4.0
+
+### Minor Changes
+
+- Show bottom navigation when in tablet & mobile
+
 ## 3.3.0
 
 ### Minor Changes
