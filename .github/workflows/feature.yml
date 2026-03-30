@@ -63,3 +63,36 @@ jobs:
           severity: 'CRITICAL,HIGH,MEDIUM'
           scanners: 'secret,vuln'
           vuln-type: 'library'
+
+  e2e:
+    needs: quality-check
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Setup and Install Dependencies
+      - name: Setup and Install Dependencies
+        uses: ./.github/actions/setup
+        with:
+          node_version: '24.11.1'
+          pnpm_version: '10.24.0'
+
+      # Install Playwright Chromium
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      # Run E2E tests
+      - name: Run E2E Tests
+        run: pnpm test:e2e
+
+      # Upload report on failure
+      - name: Upload Playwright Report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
