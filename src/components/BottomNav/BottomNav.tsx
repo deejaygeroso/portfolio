@@ -30,7 +30,7 @@ export default function BottomNav(): JSX.Element {
           }
         });
       },
-      { rootMargin: '-40% 0px -50% 0px', threshold: 0 },
+      { rootMargin: '-20% 0px -60% 0px', threshold: 0 },
     );
 
     NAV_ITEMS.forEach(({ id }) => {
