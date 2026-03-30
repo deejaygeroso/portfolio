@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 import { Box } from '@mui/material';
 
+import BottomNav from '@/components/BottomNav';
 import Navbar from '@/components/Navbar';
 import ScrollToTopFab from '@/components/ScrollToTopFab';
 import WelcomeScreen from '@/components/WelcomeScreen';
@@ -23,12 +24,17 @@ export default function MyApp(): JSX.Element {
       </Head>
 
       <Navbar />
+      <BottomNav />
 
       {/* Hero sits behind the fixed navbar — no offset needed as it's full-viewport */}
       <WelcomeScreen />
 
       {/* Sections below hero each get scroll-margin-top so the navbar doesn't cover the heading */}
-      <Box sx={{ '& > section': { scrollMarginTop: '64px' } }}>
+      <Box
+        sx={{
+          '& > section': { scrollMarginTop: '64px' },
+          pb: { xs: '56px', md: 0 },
+        }}>
         <FadeInOnScroll>
           <About />
         </FadeInOnScroll>

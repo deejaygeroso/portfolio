@@ -23,7 +23,7 @@ export default function ScrollToTopFab(): JSX.Element {
         size='medium'
         sx={{
           position: 'fixed',
-          bottom: { xs: 24, md: 32 },
+          bottom: { xs: 80, md: 32 },
           right: { xs: 24, md: 32 },
           bgcolor: '#171a1c',
           color: '#ffffff',
