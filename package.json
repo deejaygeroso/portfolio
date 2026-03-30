@@ -9,7 +9,9 @@
     "lint": "eslint",
     "format:check": "prettier --check ./src",
     "format:write": "prettier --write ./src",
-    "tsc:check": "tsc --noEmit ./src/**/*.ts"
+    "tsc:check": "tsc --noEmit ./src/**/*.ts",
+    "test:e2e": "playwright test --config=e2e/playwright.config.ts",
+    "test:e2e:prod": "playwright test --config=e2e/playwright.config.prod.ts"
   },
   "engines": {
     "node": "24.11.1"
