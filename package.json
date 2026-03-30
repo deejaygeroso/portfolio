@@ -60,9 +60,11 @@
     "overrides": {
       "@types/react": "19.2.14",
       "@types/react-dom": "19.2.3",
-      "flatted": "3.4.0",
+      "flatted": "3.4.2",
       "lodash-es": "4.17.23",
-      "minimatch": "9.0.7"
+      "minimatch": "9.0.7",
+      "picomatch": "2.3.2",
+      "yaml": "1.10.3"
     }
   }
 }
