@@ -1,5 +1,3 @@
-'use client';
-
 import { JSX, SyntheticEvent, useEffect, useState } from 'react';
 
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
@@ -24,26 +22,23 @@ export default function BottomNav(): JSX.Element {
   const [activeId, setActiveId] = useState<string>(SectionPageIds.MAIN_PAGE);
 
   useEffect(() => {
-    const observers: IntersectionObserver[] = [];
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-40% 0px -50% 0px', threshold: 0 },
+    );
 
     NAV_ITEMS.forEach(({ id }) => {
       const el = document.getElementById(id);
-      if (!el) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveId(id);
-          }
-        },
-        { threshold: 0.3 },
-      );
-
-      observer.observe(el);
-      observers.push(observer);
+      if (el) observer.observe(el);
     });
 
-    return () => observers.forEach(o => o.disconnect());
+    return () => observer.disconnect();
   }, []);
 
   const handleChange = (_: SyntheticEvent, newValue: string): void => {
@@ -53,6 +48,8 @@ export default function BottomNav(): JSX.Element {
 
   return (
     <Paper
+      component='nav'
+      aria-label='Site navigation'
       sx={{
         position: 'fixed',
         bottom: 0,
