@@ -5,7 +5,6 @@ import { JSX, useState } from 'react';
 import Image from 'next/image';
 
 import CloseIcon from '@mui/icons-material/Close';
-import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar,
   Avatar,
@@ -95,7 +94,7 @@ export default function Navbar(): JSX.Element {
             </Typography>
           </Box>
 
-          {/* Desktop nav */}
+          {/* Desktop nav links — md and above */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
             {NAV_LINKS.map(link => (
               <Button
@@ -117,16 +116,10 @@ export default function Navbar(): JSX.Element {
                 {link.label}
               </Button>
             ))}
-            <ThemeSwitcher />
           </Box>
 
-          {/* Mobile hamburger */}
-          <IconButton
-            aria-label='Open navigation menu'
-            onClick={() => setDrawerOpen(true)}
-            sx={{ display: { xs: 'flex', md: 'none' }, color: 'nav.text' }}>
-            <MenuIcon />
-          </IconButton>
+          {/* Theme switcher — always visible */}
+          <ThemeSwitcher />
         </Toolbar>
       </AppBar>
 
