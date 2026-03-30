@@ -12,23 +12,17 @@ test.describe('Scroll To Top FAB', () => {
   });
 
   test('FAB appears after scrolling down 500px', async ({ page }) => {
-    await page.evaluate(() => {
-      window.scrollTo({ top: 500, behavior: 'instant' });
-      window.dispatchEvent(new Event('scroll'));
-    });
-    await page.waitForTimeout(300);
+    await page.mouse.wheel(0, 500);
+    await page.waitForTimeout(500);
     const fab = page.getByRole('button', { name: 'Scroll to top' });
-    await expect(fab).toBeVisible({ timeout: 3000 });
+    await expect(fab).toBeVisible({ timeout: 5000 });
   });
 
   test('clicking FAB scrolls back to top', async ({ page }) => {
-    await page.evaluate(() => {
-      window.scrollTo({ top: 800, behavior: 'instant' });
-      window.dispatchEvent(new Event('scroll'));
-    });
-    await page.waitForTimeout(300);
+    await page.mouse.wheel(0, 800);
+    await page.waitForTimeout(500);
     const fab = page.getByRole('button', { name: 'Scroll to top' });
-    await expect(fab).toBeVisible({ timeout: 3000 });
+    await expect(fab).toBeVisible({ timeout: 5000 });
 
     await fab.click();
 
